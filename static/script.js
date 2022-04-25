@@ -70,6 +70,9 @@ function blankout(){
     var logo = document.querySelector('.entry');
     logo.style.display = 'block';
     logo.style.height = `${1 * window.innerHeight}px`;
+    if (window.innerWidth < 992){
+        logo.style.paddingBottom = '10em';
+    }
     // logo.style.transition = 'cubic-bezier(.55,.05,.5,.75)';
 
 
@@ -97,7 +100,7 @@ function blankin(){
     setTimeout(() => {
         var logo = document.querySelector('.entry');
         logo.style.height = '0px';
-        // logo.style.paddingTop = '0px';
+        logo.style.paddingBottom = '0em';
         // logo.style.transition = 'cubic-bezier(.55,.05,.5,.75)';
         // logo.style.display = 'none';
 
