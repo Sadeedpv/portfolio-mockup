@@ -109,11 +109,12 @@ function blankin(){
 
 window.onscroll = () => {
     buttonvisual();
-    fadein();
     fill();
     tilted();
+    slideleft();
+
     if (window.innerWidth > 992){
-        slideleft();
+        fadein();
         slideright();  
         rotated();              
     }

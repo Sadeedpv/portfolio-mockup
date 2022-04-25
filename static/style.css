@@ -6197,6 +6197,12 @@ section {
   .projects .sub-p {
     font-size: 1.4rem;
   }
+
+  .service, .contact, .skills, .projects {
+    transform: translateY(0%);
+    opacity: 1;
+    transition: all 1.2s ease-in-out;
+  }
 }
 @media all and (max-width: 768px) {
   .service .image-section img {
