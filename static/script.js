@@ -110,11 +110,14 @@ function blankin(){
 window.onscroll = () => {
     buttonvisual();
     fadein();
-    slideleft();
-    slideright();
-    rotated();
     fill();
     tilted();
+    if (window.innerWidth > 992){
+        slideleft();
+        slideright();  
+        rotated();              
+    }
+
 }
 // Disappear the button if no space to scroll top
 function buttonvisual(){
