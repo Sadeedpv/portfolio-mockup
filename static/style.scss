@@ -1,0 +1,731 @@
+$var1:#75a9d6;
+$var2:#f79784;
+$var3:#0a0a0a;
+$var4:#fcf1e7;
+$var5:#234969;
+$var6:#f8f9fa;
+$animate: all 0.2s ease-in-out;
+$enable-negative-margins: true;
+
+%message{
+    color: $var2;
+    font-size: larger;
+    opacity: 90%;
+    font-weight: 500;
+}
+%padding{
+    padding: 5em 0em 0em 10em;
+}
+%message2{
+    padding-top: 2.5em;
+    line-height: 2rem;
+    font-size: large;
+    opacity: 80%;
+    color: $var3;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Libre Baskerville', serif;
+}
+html{
+    scroll-behavior: smooth;
+    cursor: url("circle.png"), auto;
+}
+body{
+    overflow-x: hidden;
+
+}
+section{
+    max-width: 100%;
+}
+.bg{
+    width: 0%;
+    height: 5px;
+    background-color: $var2;
+    position: fixed;
+    transition: width 1s forward;
+    z-index: 3;
+}
+
+// Navbar
+
+.nav{
+    background: transparent !important;
+    .navbar-toggler{
+        background-color: $var2;
+    }
+    .navbar-brand{
+        font-family: 'Work Sans', sans-serif;
+        font-size: 2.5rem;
+    }
+    .navbar-brand::first-letter{
+        color: $var2;
+    }
+    ul .nav-item{
+        position: relative;
+        margin-left: 3em;
+        font-size: large;
+        .nav-link, .active{
+            color: $var1 ;
+            white-space: nowrap;
+        }
+        .nav-link:after{
+            position: absolute;
+            content: "";
+            background-color: $var1;
+            width: 0;
+            height: 3px;
+            left: 0;
+            bottom: -6px;
+            transition: $animate;
+            transition-duration: 0.75s;
+        }
+        .nav-link:hover{
+            color: $var1;
+        }
+        .nav-link:hover:after{
+            width: 100%;
+        }
+    }
+}
+
+// hero section
+
+.hero .hero-section{
+    margin-top: 6%;
+    .about-me{
+        @extend %message;
+    }
+    .title{
+        line-height: 1.75em;
+        .name{
+            background-color: $var4;
+        }
+    }
+    img{
+        width: 50%;
+    }
+    .subhead{
+        color: $var5;
+    }
+    .subhead::selection{
+        color: coral;
+    }
+}
+
+.gp{
+    color: #234969;
+    font-weight: 900;
+    font-size: larger;
+}
+
+.icon-size{
+    font-size: x-large;
+    padding: 5px;
+    transition: all 0.75ms;
+}
+.icon-size:hover{
+    color: $var1;
+}
+.rotated{
+    transform: translateX(30%) rotate(90deg);
+    letter-spacing: 0.5rem;
+    transition: all 1s ease-in-out;
+}
+
+.quote{
+    background-color: $var6;
+}
+.head-quote{
+    font-size: 4rem;
+    padding: 35px;
+    animation-name: colored;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-delay: -1s;
+    color: rebeccapurple;
+    white-space: nowrap;
+}
+@keyframes colored{
+    0%{
+        filter: hue-rotate(0deg);
+    }
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
+.head-quote::before{
+    content: open-quote;
+}
+.head-quote::after{
+    content: close-quote;
+}
+// Services
+
+.service{
+    margin-top: 8em;
+    .my-services{
+        @extend %message;
+    }
+    .section-subheading{
+        font-size: 2.4rem;
+    }
+    .business{
+        background-color: $var4;
+    }
+    .details{
+        @extend %message2;
+    }
+    ul{
+        list-style: none;
+        list-style-type: '🟧 ';
+        padding-top: 2em;
+        li{
+            padding-bottom: 1.5em;
+            font-weight: 900;
+            font-size: 1.5rem;
+            position: relative;
+        }
+        li::after{
+            position: absolute;
+            content: '';
+            width: 0%;
+            bottom: 20px;
+            left: 0;
+            height: 4px;
+            background-color: $var2;
+            transition: $animate;
+            transition-duration: 0.75s;
+        }
+        li:hover:after{
+            width: 40%;
+        }
+    }
+    .image-section{
+        img{
+            padding-top: 6em;
+            padding-left: 5em;
+            width: 180%;
+            height: auto;
+            
+        }
+    }
+}
+.container{
+    padding-left: 10em;
+    padding-right: 10em;
+    padding-top: 5em;
+}
+
+// skills
+.skills{
+    margin-top: 4em;
+    .skill-row {
+        padding-left: 5em;
+        padding-right: 10em;
+        padding-top: 5em;
+        img{
+            width: 150%;
+            margin-top: 3em;
+
+        }
+    }
+    .skill-det{
+        padding-left: 15em;
+        .top-skills{
+            @extend %message;
+        }
+        .skill-des{
+            font-size: 2.4rem;
+        }
+        .top-down{
+            background-color: $var4;
+        }
+        .subskill{
+            @extend %message2
+        }
+        .progress{
+            margin-bottom: 2em;
+        }
+        .progress-h{
+            font-weight: bold !important;
+            margin-bottom: -0.000000001rem;
+        }
+    }
+
+}
+// contact
+
+.contact{
+    margin-top: 3em;
+    .contact-head{
+        @extend %message;
+    }
+    .contact-subhead{
+        font-size: 2.4rem;
+        .hireme{
+            background-color: $var4;
+        }
+    }
+    .address{
+        padding: 1em 10em 0em 10em; 
+        .cnt-detail{
+            @extend %message2
+        }
+        .location{
+            padding-top: 1.2em;
+            font-size: 1.5rem;
+            a{
+                text-decoration: none;
+                color: $var3;
+                transition: all 175ms;
+            }
+            a:hover{
+                color: $var1;
+            }
+        }
+        .fa{
+            padding-right: 2.5px;
+            font-size: 1.2rem;
+        }
+    }
+}
+.hide{
+    display: none;
+}
+
+// footer
+.footer{
+    // position: fixed;
+    background-color: $var6;
+    margin-top: 6em;
+    padding: 15px;
+    padding-top: 20px;
+    .salmon{
+        color: $var1;
+        font-weight: 100;
+        font-size: 1.6rem;
+    }
+}
+
+// Fade in effect !important
+.service, .contact, .skills, .projects{
+    transform: translateY(40%);
+    opacity: 0;
+    transition: all 1.2s ease-in-out;
+}
+
+// Slide left animation
+.head-quote{
+    animation-name: none;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    // transition: all 1s ease-in-out;
+}
+
+@keyframes slide{
+    0%{
+        transform: translateX(-40%);
+    }       
+    50%{
+        transform: translateX(45%);
+    }    
+    75%{
+        transform: translateX(75%);
+    }    
+    100%{
+        transform: translateX(100%);
+    }    
+}
+
+// custom scrollabar
+/* width */
+::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: $var4; 
+  }
+
+  ::-webkit-scrollbar-thumb{
+      background: $var1;
+  }
+
+// project section
+.projects{
+    background-color: $var6;
+    margin-top: 4em;
+    margin-bottom: 4em;
+    position: relative;
+
+
+    .my-project{
+        @extend %message;
+    }
+    .sub-p{
+        font-size: 2.4rem;
+        .sub-p-mark{
+            background-color: $var4;
+
+        }        
+    }
+    .project-row{
+        padding: 4em 5em 2em 0em !important;
+        display: flex;
+        flex-direction: row;
+        gap: 2em;
+        img{
+            max-width: 40%;
+            height: 20%;
+            opacity: 65%;
+            transition: all 1s;
+            border-radius: 10px;
+            transition: animation 1s;
+            border: 15px solid #ebebeb;
+            position: relative;
+            animation-name: none;
+            animation-iteration-count: infinite;
+            animation-delay: 1s;
+            animation-duration: 8s;
+            right: 2500px;
+            // right: 1900px;
+            animation-direction: forward;
+
+        }
+
+        img:hover{
+            opacity: 100%;
+            transform: scale(1.2);
+        }
+
+
+        @keyframes tilt {
+            @for $i from 0 through 700 {
+
+                #{$i * 0.4%}{
+                    transform: translateX(#{$i * 7.89px});
+                    transition: 1s;
+                }                                
+            }        
+        }
+
+
+
+    }
+
+    .detailed-project{
+        padding: 4em 5em 2em 10em !important;
+        .fa-arrow-right{
+            font-size: 2rem;
+            color: $var2;
+            transition: 0.5s;
+        }
+    }
+    .detailed-project:hover .fa-arrow-right{
+        font-size: 2.4rem;
+    } 
+}
+
+.animated-button{
+    background-color: rgb(116, 116, 238);
+    border-radius: 10px;
+    padding: 8px;
+    transition: 0.5s;
+    margin-left: 1em;
+
+}
+.animated-button:focus{
+    background-color: rgb(70, 160, 84);
+}
+.animated-button:hover{
+    background-color: rgb(65, 65, 246);
+}
+.tick{
+    font-size: 18px;
+    display: none;
+    transition: 0.5s;
+
+}
+
+.submit{
+    transition: 0.5s;
+}
+
+.entry{
+    background-color: #0a0a0a;
+    display: none;
+    transition: all 1.5s;
+    font-size: 2.4rem;
+}
+
+
+
+
+
+// Media queries
+@media all and (max-width:1200px){
+    .nav ul .nav-item{
+        margin-left: 2em;
+    }
+    .service .section-subheading{
+        font-size: 1.8rem;
+        margin-bottom: -0.4em;
+    }
+    .service .details{
+        font-size: medium;
+    }
+    .service ul li{
+        font-size: 1rem;
+    }
+    .skills{
+        .skill-det .skill-des{
+            font-size: 1.8rem;
+            margin-bottom: -0.4em;
+        }
+        .skill-det .subskill{
+            font-size: medium;
+        }
+        .skill-det {
+            padding-left: 10em;
+        }
+    }
+    .contact{
+        .contact-subhead{
+            font-size: 1.8rem;
+        }
+        .address{
+            .cnt-detail{
+                font-size: medium;
+            }
+            .location{
+                font-size: 1rem;
+                i{
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+    .hide{
+        display: unset;
+        i{
+            padding-left: 8px;
+        }
+    }
+
+}
+
+
+
+@media all and (max-width:992px) {
+    .nav-link:after{
+        display: none;
+    }    
+    .hero .hero-section img{
+        width: 80%;
+    }
+    .rotated{
+        display: none;
+    }
+    .head-quote{
+        font-size: 2rem;
+    }
+    .container{
+        padding-left: 4em;
+        padding-right: 4em;
+        padding-top: 5em;
+    }
+    .service{
+        .my-services{
+            white-space: nowrap;
+        }
+        .section-subheading{
+            font-size: 2rem;
+        }
+        ul li{
+            font-size: 1rem;
+        }
+        .image-section{
+            img{
+                padding-left: 4em;
+                padding-top: 8em;
+                width: 180%;                
+            }
+        }
+
+    }
+    .skills .skill-row img {
+        width: 180%;
+        margin-top: 3em;
+        margin-left: -2em;
+    }
+
+    .service .section-subheading{
+        font-size: 1.4rem;
+        margin-bottom: -0.4em;
+    }
+    .service .details{
+        font-size: medium;
+    }
+    .service ul li{
+        font-size: 1rem;
+    }
+    .skills{
+        .skill-row{
+            padding-left: 2em;
+        }
+        .skill-det .skill-des{
+            font-size: 1.4rem;
+            margin-bottom: -0.4em;
+        }
+        .skill-det .subskill{
+            font-size: medium;
+        }
+        .skill-det {
+            padding-left: 7.6em;
+        }
+    }
+    .contact{
+        .contact-subhead{
+            font-size: 1.4rem;
+        }
+        .address{
+            padding-left: 2em;
+            padding-right: 2em;
+            .cnt-detail{
+                font-size: medium;
+            }
+            .location{
+                font-size: 0.8rem;
+            }
+        }
+    }
+
+    .projects .project-row img{
+        border: 10px solid #ebebeb;;
+    }
+    .projects .sub-p {
+        font-size: 1.4rem;
+    }
+}
+@media all and (max-width:768px){
+    .service .image-section img {
+        padding-left: 4em;
+        padding-top: 4em;
+        width: 100%;
+    }
+    .skills .skill-row img {
+        width: 160%;
+        margin-top: 1em;
+        padding-left: 0em;
+    }
+    .skills .skill-det {
+        padding-left: 2em;
+    }
+    .projects .detailed-project {
+        padding-top: 1em !important;
+        font-size: 0.8rem;
+        .fa-arrow-right{
+            font-size: 1rem;
+        }
+    }
+    .projects .detailed-project:hover .fa-arrow-right {
+        font-size: 1.2rem;
+    }
+    .projects .project-row img{
+        max-width: 70%;
+    }
+}
+
+@media all and (max-width:428px){
+    .navbar-brand{
+        font-size: 2rem;
+    }
+    .subhead{
+        font-size: 0.7rem;
+    }
+    .title{
+        font-size: large;
+    }
+    .head-quote{
+        font-size: 1.2rem;
+    }
+    .container{
+        padding-left: 2em;
+        padding-right: 2em;
+        padding-top: 5em;
+    }
+    .service{
+        .my-services{
+            white-space: nowrap;
+        }
+        .section-subheading{
+            font-size: 1rem;
+        }
+        ul li{
+            font-size: 1rem;
+        }
+        .image-section{
+            img{
+                padding-left: 0em;
+                padding-top: 4em;
+                width: 120%;                
+            }
+        }
+
+    }
+    .skills .skill-row img {
+        width: 120%;
+    }
+    .skills .skill-det{
+        .skill-des{
+            font-size: 1rem;   
+        }
+    }
+    .skills .skill-row{
+        padding-right: 2em;
+    }
+    textarea{
+        width: 20rem;
+        height: 4rem;
+    }
+    .form{
+        font-size: 0.8rem;
+    }
+    .projects .project-row img{
+        max-width: 90%;
+    }
+}
+
+@media all and (max-width:376px){
+    .navbar-brand{
+        font-size: 1.5rem !important;
+    }
+    .head-quote{
+        font-size: 1rem;
+    }
+    .projects .detailed-project {
+        padding-top: 0.5em !important;
+        padding-left: 2em !important;
+        padding-right: 1em !important;
+        .fa-arrow-right{
+            font-size: 0.8rem;
+        }
+    }
+    .projects .detailed-project:hover .fa-arrow-right {
+        font-size: 1rem;
+    }
+    .projects .project-row img{
+        max-width: 120%;
+    }
+    .projects .sub-p {
+        font-size: 1.2rem;
+    }
+}
+

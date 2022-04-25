@@ -1,0 +1,6324 @@
+@charset "UTF-8";
+.projects .my-project, .contact .contact-head, .skills .skill-det .top-skills, .service .my-services, .hero .hero-section .about-me {
+  color: #f79784;
+  font-size: larger;
+  opacity: 90%;
+  font-weight: 500;
+}
+
+.contact .address .cnt-detail, .skills .skill-det .subskill, .service .details {
+  padding-top: 2.5em;
+  line-height: 2rem;
+  font-size: large;
+  opacity: 80%;
+  color: #0a0a0a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Libre Baskerville", serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  cursor: url("circle.png"), auto;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+section {
+  max-width: 100%;
+}
+
+.bg {
+  width: 0%;
+  height: 5px;
+  background-color: #f79784;
+  position: fixed;
+  transition: width 1s forward;
+  z-index: 3;
+}
+
+.nav {
+  background: transparent !important;
+}
+.nav .navbar-toggler {
+  background-color: #f79784;
+}
+.nav .navbar-brand {
+  font-family: "Work Sans", sans-serif;
+  font-size: 2.5rem;
+}
+.nav .navbar-brand::first-letter {
+  color: #f79784;
+}
+.nav ul .nav-item {
+  position: relative;
+  margin-left: 3em;
+  font-size: large;
+}
+.nav ul .nav-item .nav-link, .nav ul .nav-item .active {
+  color: #75a9d6;
+  white-space: nowrap;
+}
+.nav ul .nav-item .nav-link:after {
+  position: absolute;
+  content: "";
+  background-color: #75a9d6;
+  width: 0;
+  height: 3px;
+  left: 0;
+  bottom: -6px;
+  transition: all 0.2s ease-in-out;
+  transition-duration: 0.75s;
+}
+.nav ul .nav-item .nav-link:hover {
+  color: #75a9d6;
+}
+.nav ul .nav-item .nav-link:hover:after {
+  width: 100%;
+}
+
+.hero .hero-section {
+  margin-top: 6%;
+}
+.hero .hero-section .title {
+  line-height: 1.75em;
+}
+.hero .hero-section .title .name {
+  background-color: #fcf1e7;
+}
+.hero .hero-section img {
+  width: 50%;
+}
+.hero .hero-section .subhead {
+  color: #234969;
+}
+.hero .hero-section .subhead::-moz-selection {
+  color: coral;
+}
+.hero .hero-section .subhead::selection {
+  color: coral;
+}
+
+.gp {
+  color: #234969;
+  font-weight: 900;
+  font-size: larger;
+}
+
+.icon-size {
+  font-size: x-large;
+  padding: 5px;
+  transition: all 0.75ms;
+}
+
+.icon-size:hover {
+  color: #75a9d6;
+}
+
+.rotated {
+  transform: translateX(30%) rotate(90deg);
+  letter-spacing: 0.5rem;
+  transition: all 1s ease-in-out;
+}
+
+.quote {
+  background-color: #f8f9fa;
+}
+
+.head-quote {
+  font-size: 4rem;
+  padding: 35px;
+  -webkit-animation-name: colored;
+          animation-name: colored;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-delay: -1s;
+          animation-delay: -1s;
+  color: rebeccapurple;
+  white-space: nowrap;
+}
+
+@-webkit-keyframes colored {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+@keyframes colored {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+.head-quote::before {
+  content: open-quote;
+}
+
+.head-quote::after {
+  content: close-quote;
+}
+
+.service {
+  margin-top: 8em;
+}
+.service .section-subheading {
+  font-size: 2.4rem;
+}
+.service .business {
+  background-color: #fcf1e7;
+}
+.service ul {
+  list-style: none;
+  list-style-type: "🟧 ";
+  padding-top: 2em;
+}
+.service ul li {
+  padding-bottom: 1.5em;
+  font-weight: 900;
+  font-size: 1.5rem;
+  position: relative;
+}
+.service ul li::after {
+  position: absolute;
+  content: "";
+  width: 0%;
+  bottom: 20px;
+  left: 0;
+  height: 4px;
+  background-color: #f79784;
+  transition: all 0.2s ease-in-out;
+  transition-duration: 0.75s;
+}
+.service ul li:hover:after {
+  width: 40%;
+}
+.service .image-section img {
+  padding-top: 6em;
+  padding-left: 5em;
+  width: 180%;
+  height: auto;
+}
+
+.container {
+  padding-left: 10em;
+  padding-right: 10em;
+  padding-top: 5em;
+}
+
+.skills {
+  margin-top: 4em;
+}
+.skills .skill-row {
+  padding-left: 5em;
+  padding-right: 10em;
+  padding-top: 5em;
+}
+.skills .skill-row img {
+  width: 150%;
+  margin-top: 3em;
+}
+.skills .skill-det {
+  padding-left: 15em;
+}
+.skills .skill-det .skill-des {
+  font-size: 2.4rem;
+}
+.skills .skill-det .top-down {
+  background-color: #fcf1e7;
+}
+.skills .skill-det .progress {
+  margin-bottom: 2em;
+}
+.skills .skill-det .progress-h {
+  font-weight: bold !important;
+  margin-bottom: -0.000000001rem;
+}
+
+.contact {
+  margin-top: 3em;
+}
+.contact .contact-subhead {
+  font-size: 2.4rem;
+}
+.contact .contact-subhead .hireme {
+  background-color: #fcf1e7;
+}
+.contact .address {
+  padding: 1em 10em 0em 10em;
+}
+.contact .address .location {
+  padding-top: 1.2em;
+  font-size: 1.5rem;
+}
+.contact .address .location a {
+  text-decoration: none;
+  color: #0a0a0a;
+  transition: all 175ms;
+}
+.contact .address .location a:hover {
+  color: #75a9d6;
+}
+.contact .address .fa {
+  padding-right: 2.5px;
+  font-size: 1.2rem;
+}
+
+.hide {
+  display: none;
+}
+
+.footer {
+  background-color: #f8f9fa;
+  margin-top: 6em;
+  padding: 15px;
+  padding-top: 20px;
+}
+.footer .salmon {
+  color: #75a9d6;
+  font-weight: 100;
+  font-size: 1.6rem;
+}
+
+.service, .contact, .skills, .projects {
+  transform: translateY(40%);
+  opacity: 0;
+  transition: all 1.2s ease-in-out;
+}
+
+.head-quote {
+  -webkit-animation-name: none;
+          animation-name: none;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes slide {
+  0% {
+    transform: translateX(-40%);
+  }
+  50% {
+    transform: translateX(45%);
+  }
+  75% {
+    transform: translateX(75%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(-40%);
+  }
+  50% {
+    transform: translateX(45%);
+  }
+  75% {
+    transform: translateX(75%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+/* width */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #fcf1e7;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #75a9d6;
+}
+
+.projects {
+  background-color: #f8f9fa;
+  margin-top: 4em;
+  margin-bottom: 4em;
+  position: relative;
+}
+.projects .sub-p {
+  font-size: 2.4rem;
+}
+.projects .sub-p .sub-p-mark {
+  background-color: #fcf1e7;
+}
+.projects .project-row {
+  padding: 4em 5em 2em 0em !important;
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
+}
+.projects .project-row img {
+  max-width: 40%;
+  height: 20%;
+  opacity: 65%;
+  transition: all 1s;
+  border-radius: 10px;
+  transition: -webkit-animation 1s;
+  transition: animation 1s;
+  transition: animation 1s, -webkit-animation 1s;
+  border: 15px solid #ebebeb;
+  position: relative;
+  -webkit-animation-name: none;
+          animation-name: none;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-duration: 8s;
+          animation-duration: 8s;
+  right: 2500px;
+  -webkit-animation-direction: forward;
+          animation-direction: forward;
+}
+.projects .project-row img:hover {
+  opacity: 100%;
+  transform: scale(1.2);
+}
+@-webkit-keyframes tilt {
+  0% {
+    transform: translateX(0px);
+    transition: 1s;
+  }
+  0.4% {
+    transform: translateX(7.89px);
+    transition: 1s;
+  }
+  0.8% {
+    transform: translateX(15.78px);
+    transition: 1s;
+  }
+  1.2% {
+    transform: translateX(23.67px);
+    transition: 1s;
+  }
+  1.6% {
+    transform: translateX(31.56px);
+    transition: 1s;
+  }
+  2% {
+    transform: translateX(39.45px);
+    transition: 1s;
+  }
+  2.4% {
+    transform: translateX(47.34px);
+    transition: 1s;
+  }
+  2.8% {
+    transform: translateX(55.23px);
+    transition: 1s;
+  }
+  3.2% {
+    transform: translateX(63.12px);
+    transition: 1s;
+  }
+  3.6% {
+    transform: translateX(71.01px);
+    transition: 1s;
+  }
+  4% {
+    transform: translateX(78.9px);
+    transition: 1s;
+  }
+  4.4% {
+    transform: translateX(86.79px);
+    transition: 1s;
+  }
+  4.8% {
+    transform: translateX(94.68px);
+    transition: 1s;
+  }
+  5.2% {
+    transform: translateX(102.57px);
+    transition: 1s;
+  }
+  5.6% {
+    transform: translateX(110.46px);
+    transition: 1s;
+  }
+  6% {
+    transform: translateX(118.35px);
+    transition: 1s;
+  }
+  6.4% {
+    transform: translateX(126.24px);
+    transition: 1s;
+  }
+  6.8% {
+    transform: translateX(134.13px);
+    transition: 1s;
+  }
+  7.2% {
+    transform: translateX(142.02px);
+    transition: 1s;
+  }
+  7.6% {
+    transform: translateX(149.91px);
+    transition: 1s;
+  }
+  8% {
+    transform: translateX(157.8px);
+    transition: 1s;
+  }
+  8.4% {
+    transform: translateX(165.69px);
+    transition: 1s;
+  }
+  8.8% {
+    transform: translateX(173.58px);
+    transition: 1s;
+  }
+  9.2% {
+    transform: translateX(181.47px);
+    transition: 1s;
+  }
+  9.6% {
+    transform: translateX(189.36px);
+    transition: 1s;
+  }
+  10% {
+    transform: translateX(197.25px);
+    transition: 1s;
+  }
+  10.4% {
+    transform: translateX(205.14px);
+    transition: 1s;
+  }
+  10.8% {
+    transform: translateX(213.03px);
+    transition: 1s;
+  }
+  11.2% {
+    transform: translateX(220.92px);
+    transition: 1s;
+  }
+  11.6% {
+    transform: translateX(228.81px);
+    transition: 1s;
+  }
+  12% {
+    transform: translateX(236.7px);
+    transition: 1s;
+  }
+  12.4% {
+    transform: translateX(244.59px);
+    transition: 1s;
+  }
+  12.8% {
+    transform: translateX(252.48px);
+    transition: 1s;
+  }
+  13.2% {
+    transform: translateX(260.37px);
+    transition: 1s;
+  }
+  13.6% {
+    transform: translateX(268.26px);
+    transition: 1s;
+  }
+  14% {
+    transform: translateX(276.15px);
+    transition: 1s;
+  }
+  14.4% {
+    transform: translateX(284.04px);
+    transition: 1s;
+  }
+  14.8% {
+    transform: translateX(291.93px);
+    transition: 1s;
+  }
+  15.2% {
+    transform: translateX(299.82px);
+    transition: 1s;
+  }
+  15.6% {
+    transform: translateX(307.71px);
+    transition: 1s;
+  }
+  16% {
+    transform: translateX(315.6px);
+    transition: 1s;
+  }
+  16.4% {
+    transform: translateX(323.49px);
+    transition: 1s;
+  }
+  16.8% {
+    transform: translateX(331.38px);
+    transition: 1s;
+  }
+  17.2% {
+    transform: translateX(339.27px);
+    transition: 1s;
+  }
+  17.6% {
+    transform: translateX(347.16px);
+    transition: 1s;
+  }
+  18% {
+    transform: translateX(355.05px);
+    transition: 1s;
+  }
+  18.4% {
+    transform: translateX(362.94px);
+    transition: 1s;
+  }
+  18.8% {
+    transform: translateX(370.83px);
+    transition: 1s;
+  }
+  19.2% {
+    transform: translateX(378.72px);
+    transition: 1s;
+  }
+  19.6% {
+    transform: translateX(386.61px);
+    transition: 1s;
+  }
+  20% {
+    transform: translateX(394.5px);
+    transition: 1s;
+  }
+  20.4% {
+    transform: translateX(402.39px);
+    transition: 1s;
+  }
+  20.8% {
+    transform: translateX(410.28px);
+    transition: 1s;
+  }
+  21.2% {
+    transform: translateX(418.17px);
+    transition: 1s;
+  }
+  21.6% {
+    transform: translateX(426.06px);
+    transition: 1s;
+  }
+  22% {
+    transform: translateX(433.95px);
+    transition: 1s;
+  }
+  22.4% {
+    transform: translateX(441.84px);
+    transition: 1s;
+  }
+  22.8% {
+    transform: translateX(449.73px);
+    transition: 1s;
+  }
+  23.2% {
+    transform: translateX(457.62px);
+    transition: 1s;
+  }
+  23.6% {
+    transform: translateX(465.51px);
+    transition: 1s;
+  }
+  24% {
+    transform: translateX(473.4px);
+    transition: 1s;
+  }
+  24.4% {
+    transform: translateX(481.29px);
+    transition: 1s;
+  }
+  24.8% {
+    transform: translateX(489.18px);
+    transition: 1s;
+  }
+  25.2% {
+    transform: translateX(497.07px);
+    transition: 1s;
+  }
+  25.6% {
+    transform: translateX(504.96px);
+    transition: 1s;
+  }
+  26% {
+    transform: translateX(512.85px);
+    transition: 1s;
+  }
+  26.4% {
+    transform: translateX(520.74px);
+    transition: 1s;
+  }
+  26.8% {
+    transform: translateX(528.63px);
+    transition: 1s;
+  }
+  27.2% {
+    transform: translateX(536.52px);
+    transition: 1s;
+  }
+  27.6% {
+    transform: translateX(544.41px);
+    transition: 1s;
+  }
+  28% {
+    transform: translateX(552.3px);
+    transition: 1s;
+  }
+  28.4% {
+    transform: translateX(560.19px);
+    transition: 1s;
+  }
+  28.8% {
+    transform: translateX(568.08px);
+    transition: 1s;
+  }
+  29.2% {
+    transform: translateX(575.97px);
+    transition: 1s;
+  }
+  29.6% {
+    transform: translateX(583.86px);
+    transition: 1s;
+  }
+  30% {
+    transform: translateX(591.75px);
+    transition: 1s;
+  }
+  30.4% {
+    transform: translateX(599.64px);
+    transition: 1s;
+  }
+  30.8% {
+    transform: translateX(607.53px);
+    transition: 1s;
+  }
+  31.2% {
+    transform: translateX(615.42px);
+    transition: 1s;
+  }
+  31.6% {
+    transform: translateX(623.31px);
+    transition: 1s;
+  }
+  32% {
+    transform: translateX(631.2px);
+    transition: 1s;
+  }
+  32.4% {
+    transform: translateX(639.09px);
+    transition: 1s;
+  }
+  32.8% {
+    transform: translateX(646.98px);
+    transition: 1s;
+  }
+  33.2% {
+    transform: translateX(654.87px);
+    transition: 1s;
+  }
+  33.6% {
+    transform: translateX(662.76px);
+    transition: 1s;
+  }
+  34% {
+    transform: translateX(670.65px);
+    transition: 1s;
+  }
+  34.4% {
+    transform: translateX(678.54px);
+    transition: 1s;
+  }
+  34.8% {
+    transform: translateX(686.43px);
+    transition: 1s;
+  }
+  35.2% {
+    transform: translateX(694.32px);
+    transition: 1s;
+  }
+  35.6% {
+    transform: translateX(702.21px);
+    transition: 1s;
+  }
+  36% {
+    transform: translateX(710.1px);
+    transition: 1s;
+  }
+  36.4% {
+    transform: translateX(717.99px);
+    transition: 1s;
+  }
+  36.8% {
+    transform: translateX(725.88px);
+    transition: 1s;
+  }
+  37.2% {
+    transform: translateX(733.77px);
+    transition: 1s;
+  }
+  37.6% {
+    transform: translateX(741.66px);
+    transition: 1s;
+  }
+  38% {
+    transform: translateX(749.55px);
+    transition: 1s;
+  }
+  38.4% {
+    transform: translateX(757.44px);
+    transition: 1s;
+  }
+  38.8% {
+    transform: translateX(765.33px);
+    transition: 1s;
+  }
+  39.2% {
+    transform: translateX(773.22px);
+    transition: 1s;
+  }
+  39.6% {
+    transform: translateX(781.11px);
+    transition: 1s;
+  }
+  40% {
+    transform: translateX(789px);
+    transition: 1s;
+  }
+  40.4% {
+    transform: translateX(796.89px);
+    transition: 1s;
+  }
+  40.8% {
+    transform: translateX(804.78px);
+    transition: 1s;
+  }
+  41.2% {
+    transform: translateX(812.67px);
+    transition: 1s;
+  }
+  41.6% {
+    transform: translateX(820.56px);
+    transition: 1s;
+  }
+  42% {
+    transform: translateX(828.45px);
+    transition: 1s;
+  }
+  42.4% {
+    transform: translateX(836.34px);
+    transition: 1s;
+  }
+  42.8% {
+    transform: translateX(844.23px);
+    transition: 1s;
+  }
+  43.2% {
+    transform: translateX(852.12px);
+    transition: 1s;
+  }
+  43.6% {
+    transform: translateX(860.01px);
+    transition: 1s;
+  }
+  44% {
+    transform: translateX(867.9px);
+    transition: 1s;
+  }
+  44.4% {
+    transform: translateX(875.79px);
+    transition: 1s;
+  }
+  44.8% {
+    transform: translateX(883.68px);
+    transition: 1s;
+  }
+  45.2% {
+    transform: translateX(891.57px);
+    transition: 1s;
+  }
+  45.6% {
+    transform: translateX(899.46px);
+    transition: 1s;
+  }
+  46% {
+    transform: translateX(907.35px);
+    transition: 1s;
+  }
+  46.4% {
+    transform: translateX(915.24px);
+    transition: 1s;
+  }
+  46.8% {
+    transform: translateX(923.13px);
+    transition: 1s;
+  }
+  47.2% {
+    transform: translateX(931.02px);
+    transition: 1s;
+  }
+  47.6% {
+    transform: translateX(938.91px);
+    transition: 1s;
+  }
+  48% {
+    transform: translateX(946.8px);
+    transition: 1s;
+  }
+  48.4% {
+    transform: translateX(954.69px);
+    transition: 1s;
+  }
+  48.8% {
+    transform: translateX(962.58px);
+    transition: 1s;
+  }
+  49.2% {
+    transform: translateX(970.47px);
+    transition: 1s;
+  }
+  49.6% {
+    transform: translateX(978.36px);
+    transition: 1s;
+  }
+  50% {
+    transform: translateX(986.25px);
+    transition: 1s;
+  }
+  50.4% {
+    transform: translateX(994.14px);
+    transition: 1s;
+  }
+  50.8% {
+    transform: translateX(1002.03px);
+    transition: 1s;
+  }
+  51.2% {
+    transform: translateX(1009.92px);
+    transition: 1s;
+  }
+  51.6% {
+    transform: translateX(1017.81px);
+    transition: 1s;
+  }
+  52% {
+    transform: translateX(1025.7px);
+    transition: 1s;
+  }
+  52.4% {
+    transform: translateX(1033.59px);
+    transition: 1s;
+  }
+  52.8% {
+    transform: translateX(1041.48px);
+    transition: 1s;
+  }
+  53.2% {
+    transform: translateX(1049.37px);
+    transition: 1s;
+  }
+  53.6% {
+    transform: translateX(1057.26px);
+    transition: 1s;
+  }
+  54% {
+    transform: translateX(1065.15px);
+    transition: 1s;
+  }
+  54.4% {
+    transform: translateX(1073.04px);
+    transition: 1s;
+  }
+  54.8% {
+    transform: translateX(1080.93px);
+    transition: 1s;
+  }
+  55.2% {
+    transform: translateX(1088.82px);
+    transition: 1s;
+  }
+  55.6% {
+    transform: translateX(1096.71px);
+    transition: 1s;
+  }
+  56% {
+    transform: translateX(1104.6px);
+    transition: 1s;
+  }
+  56.4% {
+    transform: translateX(1112.49px);
+    transition: 1s;
+  }
+  56.8% {
+    transform: translateX(1120.38px);
+    transition: 1s;
+  }
+  57.2% {
+    transform: translateX(1128.27px);
+    transition: 1s;
+  }
+  57.6% {
+    transform: translateX(1136.16px);
+    transition: 1s;
+  }
+  58% {
+    transform: translateX(1144.05px);
+    transition: 1s;
+  }
+  58.4% {
+    transform: translateX(1151.94px);
+    transition: 1s;
+  }
+  58.8% {
+    transform: translateX(1159.83px);
+    transition: 1s;
+  }
+  59.2% {
+    transform: translateX(1167.72px);
+    transition: 1s;
+  }
+  59.6% {
+    transform: translateX(1175.61px);
+    transition: 1s;
+  }
+  60% {
+    transform: translateX(1183.5px);
+    transition: 1s;
+  }
+  60.4% {
+    transform: translateX(1191.39px);
+    transition: 1s;
+  }
+  60.8% {
+    transform: translateX(1199.28px);
+    transition: 1s;
+  }
+  61.2% {
+    transform: translateX(1207.17px);
+    transition: 1s;
+  }
+  61.6% {
+    transform: translateX(1215.06px);
+    transition: 1s;
+  }
+  62% {
+    transform: translateX(1222.95px);
+    transition: 1s;
+  }
+  62.4% {
+    transform: translateX(1230.84px);
+    transition: 1s;
+  }
+  62.8% {
+    transform: translateX(1238.73px);
+    transition: 1s;
+  }
+  63.2% {
+    transform: translateX(1246.62px);
+    transition: 1s;
+  }
+  63.6% {
+    transform: translateX(1254.51px);
+    transition: 1s;
+  }
+  64% {
+    transform: translateX(1262.4px);
+    transition: 1s;
+  }
+  64.4% {
+    transform: translateX(1270.29px);
+    transition: 1s;
+  }
+  64.8% {
+    transform: translateX(1278.18px);
+    transition: 1s;
+  }
+  65.2% {
+    transform: translateX(1286.07px);
+    transition: 1s;
+  }
+  65.6% {
+    transform: translateX(1293.96px);
+    transition: 1s;
+  }
+  66% {
+    transform: translateX(1301.85px);
+    transition: 1s;
+  }
+  66.4% {
+    transform: translateX(1309.74px);
+    transition: 1s;
+  }
+  66.8% {
+    transform: translateX(1317.63px);
+    transition: 1s;
+  }
+  67.2% {
+    transform: translateX(1325.52px);
+    transition: 1s;
+  }
+  67.6% {
+    transform: translateX(1333.41px);
+    transition: 1s;
+  }
+  68% {
+    transform: translateX(1341.3px);
+    transition: 1s;
+  }
+  68.4% {
+    transform: translateX(1349.19px);
+    transition: 1s;
+  }
+  68.8% {
+    transform: translateX(1357.08px);
+    transition: 1s;
+  }
+  69.2% {
+    transform: translateX(1364.97px);
+    transition: 1s;
+  }
+  69.6% {
+    transform: translateX(1372.86px);
+    transition: 1s;
+  }
+  70% {
+    transform: translateX(1380.75px);
+    transition: 1s;
+  }
+  70.4% {
+    transform: translateX(1388.64px);
+    transition: 1s;
+  }
+  70.8% {
+    transform: translateX(1396.53px);
+    transition: 1s;
+  }
+  71.2% {
+    transform: translateX(1404.42px);
+    transition: 1s;
+  }
+  71.6% {
+    transform: translateX(1412.31px);
+    transition: 1s;
+  }
+  72% {
+    transform: translateX(1420.2px);
+    transition: 1s;
+  }
+  72.4% {
+    transform: translateX(1428.09px);
+    transition: 1s;
+  }
+  72.8% {
+    transform: translateX(1435.98px);
+    transition: 1s;
+  }
+  73.2% {
+    transform: translateX(1443.87px);
+    transition: 1s;
+  }
+  73.6% {
+    transform: translateX(1451.76px);
+    transition: 1s;
+  }
+  74% {
+    transform: translateX(1459.65px);
+    transition: 1s;
+  }
+  74.4% {
+    transform: translateX(1467.54px);
+    transition: 1s;
+  }
+  74.8% {
+    transform: translateX(1475.43px);
+    transition: 1s;
+  }
+  75.2% {
+    transform: translateX(1483.32px);
+    transition: 1s;
+  }
+  75.6% {
+    transform: translateX(1491.21px);
+    transition: 1s;
+  }
+  76% {
+    transform: translateX(1499.1px);
+    transition: 1s;
+  }
+  76.4% {
+    transform: translateX(1506.99px);
+    transition: 1s;
+  }
+  76.8% {
+    transform: translateX(1514.88px);
+    transition: 1s;
+  }
+  77.2% {
+    transform: translateX(1522.77px);
+    transition: 1s;
+  }
+  77.6% {
+    transform: translateX(1530.66px);
+    transition: 1s;
+  }
+  78% {
+    transform: translateX(1538.55px);
+    transition: 1s;
+  }
+  78.4% {
+    transform: translateX(1546.44px);
+    transition: 1s;
+  }
+  78.8% {
+    transform: translateX(1554.33px);
+    transition: 1s;
+  }
+  79.2% {
+    transform: translateX(1562.22px);
+    transition: 1s;
+  }
+  79.6% {
+    transform: translateX(1570.11px);
+    transition: 1s;
+  }
+  80% {
+    transform: translateX(1578px);
+    transition: 1s;
+  }
+  80.4% {
+    transform: translateX(1585.89px);
+    transition: 1s;
+  }
+  80.8% {
+    transform: translateX(1593.78px);
+    transition: 1s;
+  }
+  81.2% {
+    transform: translateX(1601.67px);
+    transition: 1s;
+  }
+  81.6% {
+    transform: translateX(1609.56px);
+    transition: 1s;
+  }
+  82% {
+    transform: translateX(1617.45px);
+    transition: 1s;
+  }
+  82.4% {
+    transform: translateX(1625.34px);
+    transition: 1s;
+  }
+  82.8% {
+    transform: translateX(1633.23px);
+    transition: 1s;
+  }
+  83.2% {
+    transform: translateX(1641.12px);
+    transition: 1s;
+  }
+  83.6% {
+    transform: translateX(1649.01px);
+    transition: 1s;
+  }
+  84% {
+    transform: translateX(1656.9px);
+    transition: 1s;
+  }
+  84.4% {
+    transform: translateX(1664.79px);
+    transition: 1s;
+  }
+  84.8% {
+    transform: translateX(1672.68px);
+    transition: 1s;
+  }
+  85.2% {
+    transform: translateX(1680.57px);
+    transition: 1s;
+  }
+  85.6% {
+    transform: translateX(1688.46px);
+    transition: 1s;
+  }
+  86% {
+    transform: translateX(1696.35px);
+    transition: 1s;
+  }
+  86.4% {
+    transform: translateX(1704.24px);
+    transition: 1s;
+  }
+  86.8% {
+    transform: translateX(1712.13px);
+    transition: 1s;
+  }
+  87.2% {
+    transform: translateX(1720.02px);
+    transition: 1s;
+  }
+  87.6% {
+    transform: translateX(1727.91px);
+    transition: 1s;
+  }
+  88% {
+    transform: translateX(1735.8px);
+    transition: 1s;
+  }
+  88.4% {
+    transform: translateX(1743.69px);
+    transition: 1s;
+  }
+  88.8% {
+    transform: translateX(1751.58px);
+    transition: 1s;
+  }
+  89.2% {
+    transform: translateX(1759.47px);
+    transition: 1s;
+  }
+  89.6% {
+    transform: translateX(1767.36px);
+    transition: 1s;
+  }
+  90% {
+    transform: translateX(1775.25px);
+    transition: 1s;
+  }
+  90.4% {
+    transform: translateX(1783.14px);
+    transition: 1s;
+  }
+  90.8% {
+    transform: translateX(1791.03px);
+    transition: 1s;
+  }
+  91.2% {
+    transform: translateX(1798.92px);
+    transition: 1s;
+  }
+  91.6% {
+    transform: translateX(1806.81px);
+    transition: 1s;
+  }
+  92% {
+    transform: translateX(1814.7px);
+    transition: 1s;
+  }
+  92.4% {
+    transform: translateX(1822.59px);
+    transition: 1s;
+  }
+  92.8% {
+    transform: translateX(1830.48px);
+    transition: 1s;
+  }
+  93.2% {
+    transform: translateX(1838.37px);
+    transition: 1s;
+  }
+  93.6% {
+    transform: translateX(1846.26px);
+    transition: 1s;
+  }
+  94% {
+    transform: translateX(1854.15px);
+    transition: 1s;
+  }
+  94.4% {
+    transform: translateX(1862.04px);
+    transition: 1s;
+  }
+  94.8% {
+    transform: translateX(1869.93px);
+    transition: 1s;
+  }
+  95.2% {
+    transform: translateX(1877.82px);
+    transition: 1s;
+  }
+  95.6% {
+    transform: translateX(1885.71px);
+    transition: 1s;
+  }
+  96% {
+    transform: translateX(1893.6px);
+    transition: 1s;
+  }
+  96.4% {
+    transform: translateX(1901.49px);
+    transition: 1s;
+  }
+  96.8% {
+    transform: translateX(1909.38px);
+    transition: 1s;
+  }
+  97.2% {
+    transform: translateX(1917.27px);
+    transition: 1s;
+  }
+  97.6% {
+    transform: translateX(1925.16px);
+    transition: 1s;
+  }
+  98% {
+    transform: translateX(1933.05px);
+    transition: 1s;
+  }
+  98.4% {
+    transform: translateX(1940.94px);
+    transition: 1s;
+  }
+  98.8% {
+    transform: translateX(1948.83px);
+    transition: 1s;
+  }
+  99.2% {
+    transform: translateX(1956.72px);
+    transition: 1s;
+  }
+  99.6% {
+    transform: translateX(1964.61px);
+    transition: 1s;
+  }
+  100% {
+    transform: translateX(1972.5px);
+    transition: 1s;
+  }
+  100.4% {
+    transform: translateX(1980.39px);
+    transition: 1s;
+  }
+  100.8% {
+    transform: translateX(1988.28px);
+    transition: 1s;
+  }
+  101.2% {
+    transform: translateX(1996.17px);
+    transition: 1s;
+  }
+  101.6% {
+    transform: translateX(2004.06px);
+    transition: 1s;
+  }
+  102% {
+    transform: translateX(2011.95px);
+    transition: 1s;
+  }
+  102.4% {
+    transform: translateX(2019.84px);
+    transition: 1s;
+  }
+  102.8% {
+    transform: translateX(2027.73px);
+    transition: 1s;
+  }
+  103.2% {
+    transform: translateX(2035.62px);
+    transition: 1s;
+  }
+  103.6% {
+    transform: translateX(2043.51px);
+    transition: 1s;
+  }
+  104% {
+    transform: translateX(2051.4px);
+    transition: 1s;
+  }
+  104.4% {
+    transform: translateX(2059.29px);
+    transition: 1s;
+  }
+  104.8% {
+    transform: translateX(2067.18px);
+    transition: 1s;
+  }
+  105.2% {
+    transform: translateX(2075.07px);
+    transition: 1s;
+  }
+  105.6% {
+    transform: translateX(2082.96px);
+    transition: 1s;
+  }
+  106% {
+    transform: translateX(2090.85px);
+    transition: 1s;
+  }
+  106.4% {
+    transform: translateX(2098.74px);
+    transition: 1s;
+  }
+  106.8% {
+    transform: translateX(2106.63px);
+    transition: 1s;
+  }
+  107.2% {
+    transform: translateX(2114.52px);
+    transition: 1s;
+  }
+  107.6% {
+    transform: translateX(2122.41px);
+    transition: 1s;
+  }
+  108% {
+    transform: translateX(2130.3px);
+    transition: 1s;
+  }
+  108.4% {
+    transform: translateX(2138.19px);
+    transition: 1s;
+  }
+  108.8% {
+    transform: translateX(2146.08px);
+    transition: 1s;
+  }
+  109.2% {
+    transform: translateX(2153.97px);
+    transition: 1s;
+  }
+  109.6% {
+    transform: translateX(2161.86px);
+    transition: 1s;
+  }
+  110% {
+    transform: translateX(2169.75px);
+    transition: 1s;
+  }
+  110.4% {
+    transform: translateX(2177.64px);
+    transition: 1s;
+  }
+  110.8% {
+    transform: translateX(2185.53px);
+    transition: 1s;
+  }
+  111.2% {
+    transform: translateX(2193.42px);
+    transition: 1s;
+  }
+  111.6% {
+    transform: translateX(2201.31px);
+    transition: 1s;
+  }
+  112% {
+    transform: translateX(2209.2px);
+    transition: 1s;
+  }
+  112.4% {
+    transform: translateX(2217.09px);
+    transition: 1s;
+  }
+  112.8% {
+    transform: translateX(2224.98px);
+    transition: 1s;
+  }
+  113.2% {
+    transform: translateX(2232.87px);
+    transition: 1s;
+  }
+  113.6% {
+    transform: translateX(2240.76px);
+    transition: 1s;
+  }
+  114% {
+    transform: translateX(2248.65px);
+    transition: 1s;
+  }
+  114.4% {
+    transform: translateX(2256.54px);
+    transition: 1s;
+  }
+  114.8% {
+    transform: translateX(2264.43px);
+    transition: 1s;
+  }
+  115.2% {
+    transform: translateX(2272.32px);
+    transition: 1s;
+  }
+  115.6% {
+    transform: translateX(2280.21px);
+    transition: 1s;
+  }
+  116% {
+    transform: translateX(2288.1px);
+    transition: 1s;
+  }
+  116.4% {
+    transform: translateX(2295.99px);
+    transition: 1s;
+  }
+  116.8% {
+    transform: translateX(2303.88px);
+    transition: 1s;
+  }
+  117.2% {
+    transform: translateX(2311.77px);
+    transition: 1s;
+  }
+  117.6% {
+    transform: translateX(2319.66px);
+    transition: 1s;
+  }
+  118% {
+    transform: translateX(2327.55px);
+    transition: 1s;
+  }
+  118.4% {
+    transform: translateX(2335.44px);
+    transition: 1s;
+  }
+  118.8% {
+    transform: translateX(2343.33px);
+    transition: 1s;
+  }
+  119.2% {
+    transform: translateX(2351.22px);
+    transition: 1s;
+  }
+  119.6% {
+    transform: translateX(2359.11px);
+    transition: 1s;
+  }
+  120% {
+    transform: translateX(2367px);
+    transition: 1s;
+  }
+  120.4% {
+    transform: translateX(2374.89px);
+    transition: 1s;
+  }
+  120.8% {
+    transform: translateX(2382.78px);
+    transition: 1s;
+  }
+  121.2% {
+    transform: translateX(2390.67px);
+    transition: 1s;
+  }
+  121.6% {
+    transform: translateX(2398.56px);
+    transition: 1s;
+  }
+  122% {
+    transform: translateX(2406.45px);
+    transition: 1s;
+  }
+  122.4% {
+    transform: translateX(2414.34px);
+    transition: 1s;
+  }
+  122.8% {
+    transform: translateX(2422.23px);
+    transition: 1s;
+  }
+  123.2% {
+    transform: translateX(2430.12px);
+    transition: 1s;
+  }
+  123.6% {
+    transform: translateX(2438.01px);
+    transition: 1s;
+  }
+  124% {
+    transform: translateX(2445.9px);
+    transition: 1s;
+  }
+  124.4% {
+    transform: translateX(2453.79px);
+    transition: 1s;
+  }
+  124.8% {
+    transform: translateX(2461.68px);
+    transition: 1s;
+  }
+  125.2% {
+    transform: translateX(2469.57px);
+    transition: 1s;
+  }
+  125.6% {
+    transform: translateX(2477.46px);
+    transition: 1s;
+  }
+  126% {
+    transform: translateX(2485.35px);
+    transition: 1s;
+  }
+  126.4% {
+    transform: translateX(2493.24px);
+    transition: 1s;
+  }
+  126.8% {
+    transform: translateX(2501.13px);
+    transition: 1s;
+  }
+  127.2% {
+    transform: translateX(2509.02px);
+    transition: 1s;
+  }
+  127.6% {
+    transform: translateX(2516.91px);
+    transition: 1s;
+  }
+  128% {
+    transform: translateX(2524.8px);
+    transition: 1s;
+  }
+  128.4% {
+    transform: translateX(2532.69px);
+    transition: 1s;
+  }
+  128.8% {
+    transform: translateX(2540.58px);
+    transition: 1s;
+  }
+  129.2% {
+    transform: translateX(2548.47px);
+    transition: 1s;
+  }
+  129.6% {
+    transform: translateX(2556.36px);
+    transition: 1s;
+  }
+  130% {
+    transform: translateX(2564.25px);
+    transition: 1s;
+  }
+  130.4% {
+    transform: translateX(2572.14px);
+    transition: 1s;
+  }
+  130.8% {
+    transform: translateX(2580.03px);
+    transition: 1s;
+  }
+  131.2% {
+    transform: translateX(2587.92px);
+    transition: 1s;
+  }
+  131.6% {
+    transform: translateX(2595.81px);
+    transition: 1s;
+  }
+  132% {
+    transform: translateX(2603.7px);
+    transition: 1s;
+  }
+  132.4% {
+    transform: translateX(2611.59px);
+    transition: 1s;
+  }
+  132.8% {
+    transform: translateX(2619.48px);
+    transition: 1s;
+  }
+  133.2% {
+    transform: translateX(2627.37px);
+    transition: 1s;
+  }
+  133.6% {
+    transform: translateX(2635.26px);
+    transition: 1s;
+  }
+  134% {
+    transform: translateX(2643.15px);
+    transition: 1s;
+  }
+  134.4% {
+    transform: translateX(2651.04px);
+    transition: 1s;
+  }
+  134.8% {
+    transform: translateX(2658.93px);
+    transition: 1s;
+  }
+  135.2% {
+    transform: translateX(2666.82px);
+    transition: 1s;
+  }
+  135.6% {
+    transform: translateX(2674.71px);
+    transition: 1s;
+  }
+  136% {
+    transform: translateX(2682.6px);
+    transition: 1s;
+  }
+  136.4% {
+    transform: translateX(2690.49px);
+    transition: 1s;
+  }
+  136.8% {
+    transform: translateX(2698.38px);
+    transition: 1s;
+  }
+  137.2% {
+    transform: translateX(2706.27px);
+    transition: 1s;
+  }
+  137.6% {
+    transform: translateX(2714.16px);
+    transition: 1s;
+  }
+  138% {
+    transform: translateX(2722.05px);
+    transition: 1s;
+  }
+  138.4% {
+    transform: translateX(2729.94px);
+    transition: 1s;
+  }
+  138.8% {
+    transform: translateX(2737.83px);
+    transition: 1s;
+  }
+  139.2% {
+    transform: translateX(2745.72px);
+    transition: 1s;
+  }
+  139.6% {
+    transform: translateX(2753.61px);
+    transition: 1s;
+  }
+  140% {
+    transform: translateX(2761.5px);
+    transition: 1s;
+  }
+  140.4% {
+    transform: translateX(2769.39px);
+    transition: 1s;
+  }
+  140.8% {
+    transform: translateX(2777.28px);
+    transition: 1s;
+  }
+  141.2% {
+    transform: translateX(2785.17px);
+    transition: 1s;
+  }
+  141.6% {
+    transform: translateX(2793.06px);
+    transition: 1s;
+  }
+  142% {
+    transform: translateX(2800.95px);
+    transition: 1s;
+  }
+  142.4% {
+    transform: translateX(2808.84px);
+    transition: 1s;
+  }
+  142.8% {
+    transform: translateX(2816.73px);
+    transition: 1s;
+  }
+  143.2% {
+    transform: translateX(2824.62px);
+    transition: 1s;
+  }
+  143.6% {
+    transform: translateX(2832.51px);
+    transition: 1s;
+  }
+  144% {
+    transform: translateX(2840.4px);
+    transition: 1s;
+  }
+  144.4% {
+    transform: translateX(2848.29px);
+    transition: 1s;
+  }
+  144.8% {
+    transform: translateX(2856.18px);
+    transition: 1s;
+  }
+  145.2% {
+    transform: translateX(2864.07px);
+    transition: 1s;
+  }
+  145.6% {
+    transform: translateX(2871.96px);
+    transition: 1s;
+  }
+  146% {
+    transform: translateX(2879.85px);
+    transition: 1s;
+  }
+  146.4% {
+    transform: translateX(2887.74px);
+    transition: 1s;
+  }
+  146.8% {
+    transform: translateX(2895.63px);
+    transition: 1s;
+  }
+  147.2% {
+    transform: translateX(2903.52px);
+    transition: 1s;
+  }
+  147.6% {
+    transform: translateX(2911.41px);
+    transition: 1s;
+  }
+  148% {
+    transform: translateX(2919.3px);
+    transition: 1s;
+  }
+  148.4% {
+    transform: translateX(2927.19px);
+    transition: 1s;
+  }
+  148.8% {
+    transform: translateX(2935.08px);
+    transition: 1s;
+  }
+  149.2% {
+    transform: translateX(2942.97px);
+    transition: 1s;
+  }
+  149.6% {
+    transform: translateX(2950.86px);
+    transition: 1s;
+  }
+  150% {
+    transform: translateX(2958.75px);
+    transition: 1s;
+  }
+  150.4% {
+    transform: translateX(2966.64px);
+    transition: 1s;
+  }
+  150.8% {
+    transform: translateX(2974.53px);
+    transition: 1s;
+  }
+  151.2% {
+    transform: translateX(2982.42px);
+    transition: 1s;
+  }
+  151.6% {
+    transform: translateX(2990.31px);
+    transition: 1s;
+  }
+  152% {
+    transform: translateX(2998.2px);
+    transition: 1s;
+  }
+  152.4% {
+    transform: translateX(3006.09px);
+    transition: 1s;
+  }
+  152.8% {
+    transform: translateX(3013.98px);
+    transition: 1s;
+  }
+  153.2% {
+    transform: translateX(3021.87px);
+    transition: 1s;
+  }
+  153.6% {
+    transform: translateX(3029.76px);
+    transition: 1s;
+  }
+  154% {
+    transform: translateX(3037.65px);
+    transition: 1s;
+  }
+  154.4% {
+    transform: translateX(3045.54px);
+    transition: 1s;
+  }
+  154.8% {
+    transform: translateX(3053.43px);
+    transition: 1s;
+  }
+  155.2% {
+    transform: translateX(3061.32px);
+    transition: 1s;
+  }
+  155.6% {
+    transform: translateX(3069.21px);
+    transition: 1s;
+  }
+  156% {
+    transform: translateX(3077.1px);
+    transition: 1s;
+  }
+  156.4% {
+    transform: translateX(3084.99px);
+    transition: 1s;
+  }
+  156.8% {
+    transform: translateX(3092.88px);
+    transition: 1s;
+  }
+  157.2% {
+    transform: translateX(3100.77px);
+    transition: 1s;
+  }
+  157.6% {
+    transform: translateX(3108.66px);
+    transition: 1s;
+  }
+  158% {
+    transform: translateX(3116.55px);
+    transition: 1s;
+  }
+  158.4% {
+    transform: translateX(3124.44px);
+    transition: 1s;
+  }
+  158.8% {
+    transform: translateX(3132.33px);
+    transition: 1s;
+  }
+  159.2% {
+    transform: translateX(3140.22px);
+    transition: 1s;
+  }
+  159.6% {
+    transform: translateX(3148.11px);
+    transition: 1s;
+  }
+  160% {
+    transform: translateX(3156px);
+    transition: 1s;
+  }
+  160.4% {
+    transform: translateX(3163.89px);
+    transition: 1s;
+  }
+  160.8% {
+    transform: translateX(3171.78px);
+    transition: 1s;
+  }
+  161.2% {
+    transform: translateX(3179.67px);
+    transition: 1s;
+  }
+  161.6% {
+    transform: translateX(3187.56px);
+    transition: 1s;
+  }
+  162% {
+    transform: translateX(3195.45px);
+    transition: 1s;
+  }
+  162.4% {
+    transform: translateX(3203.34px);
+    transition: 1s;
+  }
+  162.8% {
+    transform: translateX(3211.23px);
+    transition: 1s;
+  }
+  163.2% {
+    transform: translateX(3219.12px);
+    transition: 1s;
+  }
+  163.6% {
+    transform: translateX(3227.01px);
+    transition: 1s;
+  }
+  164% {
+    transform: translateX(3234.9px);
+    transition: 1s;
+  }
+  164.4% {
+    transform: translateX(3242.79px);
+    transition: 1s;
+  }
+  164.8% {
+    transform: translateX(3250.68px);
+    transition: 1s;
+  }
+  165.2% {
+    transform: translateX(3258.57px);
+    transition: 1s;
+  }
+  165.6% {
+    transform: translateX(3266.46px);
+    transition: 1s;
+  }
+  166% {
+    transform: translateX(3274.35px);
+    transition: 1s;
+  }
+  166.4% {
+    transform: translateX(3282.24px);
+    transition: 1s;
+  }
+  166.8% {
+    transform: translateX(3290.13px);
+    transition: 1s;
+  }
+  167.2% {
+    transform: translateX(3298.02px);
+    transition: 1s;
+  }
+  167.6% {
+    transform: translateX(3305.91px);
+    transition: 1s;
+  }
+  168% {
+    transform: translateX(3313.8px);
+    transition: 1s;
+  }
+  168.4% {
+    transform: translateX(3321.69px);
+    transition: 1s;
+  }
+  168.8% {
+    transform: translateX(3329.58px);
+    transition: 1s;
+  }
+  169.2% {
+    transform: translateX(3337.47px);
+    transition: 1s;
+  }
+  169.6% {
+    transform: translateX(3345.36px);
+    transition: 1s;
+  }
+  170% {
+    transform: translateX(3353.25px);
+    transition: 1s;
+  }
+  170.4% {
+    transform: translateX(3361.14px);
+    transition: 1s;
+  }
+  170.8% {
+    transform: translateX(3369.03px);
+    transition: 1s;
+  }
+  171.2% {
+    transform: translateX(3376.92px);
+    transition: 1s;
+  }
+  171.6% {
+    transform: translateX(3384.81px);
+    transition: 1s;
+  }
+  172% {
+    transform: translateX(3392.7px);
+    transition: 1s;
+  }
+  172.4% {
+    transform: translateX(3400.59px);
+    transition: 1s;
+  }
+  172.8% {
+    transform: translateX(3408.48px);
+    transition: 1s;
+  }
+  173.2% {
+    transform: translateX(3416.37px);
+    transition: 1s;
+  }
+  173.6% {
+    transform: translateX(3424.26px);
+    transition: 1s;
+  }
+  174% {
+    transform: translateX(3432.15px);
+    transition: 1s;
+  }
+  174.4% {
+    transform: translateX(3440.04px);
+    transition: 1s;
+  }
+  174.8% {
+    transform: translateX(3447.93px);
+    transition: 1s;
+  }
+  175.2% {
+    transform: translateX(3455.82px);
+    transition: 1s;
+  }
+  175.6% {
+    transform: translateX(3463.71px);
+    transition: 1s;
+  }
+  176% {
+    transform: translateX(3471.6px);
+    transition: 1s;
+  }
+  176.4% {
+    transform: translateX(3479.49px);
+    transition: 1s;
+  }
+  176.8% {
+    transform: translateX(3487.38px);
+    transition: 1s;
+  }
+  177.2% {
+    transform: translateX(3495.27px);
+    transition: 1s;
+  }
+  177.6% {
+    transform: translateX(3503.16px);
+    transition: 1s;
+  }
+  178% {
+    transform: translateX(3511.05px);
+    transition: 1s;
+  }
+  178.4% {
+    transform: translateX(3518.94px);
+    transition: 1s;
+  }
+  178.8% {
+    transform: translateX(3526.83px);
+    transition: 1s;
+  }
+  179.2% {
+    transform: translateX(3534.72px);
+    transition: 1s;
+  }
+  179.6% {
+    transform: translateX(3542.61px);
+    transition: 1s;
+  }
+  180% {
+    transform: translateX(3550.5px);
+    transition: 1s;
+  }
+  180.4% {
+    transform: translateX(3558.39px);
+    transition: 1s;
+  }
+  180.8% {
+    transform: translateX(3566.28px);
+    transition: 1s;
+  }
+  181.2% {
+    transform: translateX(3574.17px);
+    transition: 1s;
+  }
+  181.6% {
+    transform: translateX(3582.06px);
+    transition: 1s;
+  }
+  182% {
+    transform: translateX(3589.95px);
+    transition: 1s;
+  }
+  182.4% {
+    transform: translateX(3597.84px);
+    transition: 1s;
+  }
+  182.8% {
+    transform: translateX(3605.73px);
+    transition: 1s;
+  }
+  183.2% {
+    transform: translateX(3613.62px);
+    transition: 1s;
+  }
+  183.6% {
+    transform: translateX(3621.51px);
+    transition: 1s;
+  }
+  184% {
+    transform: translateX(3629.4px);
+    transition: 1s;
+  }
+  184.4% {
+    transform: translateX(3637.29px);
+    transition: 1s;
+  }
+  184.8% {
+    transform: translateX(3645.18px);
+    transition: 1s;
+  }
+  185.2% {
+    transform: translateX(3653.07px);
+    transition: 1s;
+  }
+  185.6% {
+    transform: translateX(3660.96px);
+    transition: 1s;
+  }
+  186% {
+    transform: translateX(3668.85px);
+    transition: 1s;
+  }
+  186.4% {
+    transform: translateX(3676.74px);
+    transition: 1s;
+  }
+  186.8% {
+    transform: translateX(3684.63px);
+    transition: 1s;
+  }
+  187.2% {
+    transform: translateX(3692.52px);
+    transition: 1s;
+  }
+  187.6% {
+    transform: translateX(3700.41px);
+    transition: 1s;
+  }
+  188% {
+    transform: translateX(3708.3px);
+    transition: 1s;
+  }
+  188.4% {
+    transform: translateX(3716.19px);
+    transition: 1s;
+  }
+  188.8% {
+    transform: translateX(3724.08px);
+    transition: 1s;
+  }
+  189.2% {
+    transform: translateX(3731.97px);
+    transition: 1s;
+  }
+  189.6% {
+    transform: translateX(3739.86px);
+    transition: 1s;
+  }
+  190% {
+    transform: translateX(3747.75px);
+    transition: 1s;
+  }
+  190.4% {
+    transform: translateX(3755.64px);
+    transition: 1s;
+  }
+  190.8% {
+    transform: translateX(3763.53px);
+    transition: 1s;
+  }
+  191.2% {
+    transform: translateX(3771.42px);
+    transition: 1s;
+  }
+  191.6% {
+    transform: translateX(3779.31px);
+    transition: 1s;
+  }
+  192% {
+    transform: translateX(3787.2px);
+    transition: 1s;
+  }
+  192.4% {
+    transform: translateX(3795.09px);
+    transition: 1s;
+  }
+  192.8% {
+    transform: translateX(3802.98px);
+    transition: 1s;
+  }
+  193.2% {
+    transform: translateX(3810.87px);
+    transition: 1s;
+  }
+  193.6% {
+    transform: translateX(3818.76px);
+    transition: 1s;
+  }
+  194% {
+    transform: translateX(3826.65px);
+    transition: 1s;
+  }
+  194.4% {
+    transform: translateX(3834.54px);
+    transition: 1s;
+  }
+  194.8% {
+    transform: translateX(3842.43px);
+    transition: 1s;
+  }
+  195.2% {
+    transform: translateX(3850.32px);
+    transition: 1s;
+  }
+  195.6% {
+    transform: translateX(3858.21px);
+    transition: 1s;
+  }
+  196% {
+    transform: translateX(3866.1px);
+    transition: 1s;
+  }
+  196.4% {
+    transform: translateX(3873.99px);
+    transition: 1s;
+  }
+  196.8% {
+    transform: translateX(3881.88px);
+    transition: 1s;
+  }
+  197.2% {
+    transform: translateX(3889.77px);
+    transition: 1s;
+  }
+  197.6% {
+    transform: translateX(3897.66px);
+    transition: 1s;
+  }
+  198% {
+    transform: translateX(3905.55px);
+    transition: 1s;
+  }
+  198.4% {
+    transform: translateX(3913.44px);
+    transition: 1s;
+  }
+  198.8% {
+    transform: translateX(3921.33px);
+    transition: 1s;
+  }
+  199.2% {
+    transform: translateX(3929.22px);
+    transition: 1s;
+  }
+  199.6% {
+    transform: translateX(3937.11px);
+    transition: 1s;
+  }
+  200% {
+    transform: translateX(3945px);
+    transition: 1s;
+  }
+  200.4% {
+    transform: translateX(3952.89px);
+    transition: 1s;
+  }
+  200.8% {
+    transform: translateX(3960.78px);
+    transition: 1s;
+  }
+  201.2% {
+    transform: translateX(3968.67px);
+    transition: 1s;
+  }
+  201.6% {
+    transform: translateX(3976.56px);
+    transition: 1s;
+  }
+  202% {
+    transform: translateX(3984.45px);
+    transition: 1s;
+  }
+  202.4% {
+    transform: translateX(3992.34px);
+    transition: 1s;
+  }
+  202.8% {
+    transform: translateX(4000.23px);
+    transition: 1s;
+  }
+  203.2% {
+    transform: translateX(4008.12px);
+    transition: 1s;
+  }
+  203.6% {
+    transform: translateX(4016.01px);
+    transition: 1s;
+  }
+  204% {
+    transform: translateX(4023.9px);
+    transition: 1s;
+  }
+  204.4% {
+    transform: translateX(4031.79px);
+    transition: 1s;
+  }
+  204.8% {
+    transform: translateX(4039.68px);
+    transition: 1s;
+  }
+  205.2% {
+    transform: translateX(4047.57px);
+    transition: 1s;
+  }
+  205.6% {
+    transform: translateX(4055.46px);
+    transition: 1s;
+  }
+  206% {
+    transform: translateX(4063.35px);
+    transition: 1s;
+  }
+  206.4% {
+    transform: translateX(4071.24px);
+    transition: 1s;
+  }
+  206.8% {
+    transform: translateX(4079.13px);
+    transition: 1s;
+  }
+  207.2% {
+    transform: translateX(4087.02px);
+    transition: 1s;
+  }
+  207.6% {
+    transform: translateX(4094.91px);
+    transition: 1s;
+  }
+  208% {
+    transform: translateX(4102.8px);
+    transition: 1s;
+  }
+  208.4% {
+    transform: translateX(4110.69px);
+    transition: 1s;
+  }
+  208.8% {
+    transform: translateX(4118.58px);
+    transition: 1s;
+  }
+  209.2% {
+    transform: translateX(4126.47px);
+    transition: 1s;
+  }
+  209.6% {
+    transform: translateX(4134.36px);
+    transition: 1s;
+  }
+  210% {
+    transform: translateX(4142.25px);
+    transition: 1s;
+  }
+  210.4% {
+    transform: translateX(4150.14px);
+    transition: 1s;
+  }
+  210.8% {
+    transform: translateX(4158.03px);
+    transition: 1s;
+  }
+  211.2% {
+    transform: translateX(4165.92px);
+    transition: 1s;
+  }
+  211.6% {
+    transform: translateX(4173.81px);
+    transition: 1s;
+  }
+  212% {
+    transform: translateX(4181.7px);
+    transition: 1s;
+  }
+  212.4% {
+    transform: translateX(4189.59px);
+    transition: 1s;
+  }
+  212.8% {
+    transform: translateX(4197.48px);
+    transition: 1s;
+  }
+  213.2% {
+    transform: translateX(4205.37px);
+    transition: 1s;
+  }
+  213.6% {
+    transform: translateX(4213.26px);
+    transition: 1s;
+  }
+  214% {
+    transform: translateX(4221.15px);
+    transition: 1s;
+  }
+  214.4% {
+    transform: translateX(4229.04px);
+    transition: 1s;
+  }
+  214.8% {
+    transform: translateX(4236.93px);
+    transition: 1s;
+  }
+  215.2% {
+    transform: translateX(4244.82px);
+    transition: 1s;
+  }
+  215.6% {
+    transform: translateX(4252.71px);
+    transition: 1s;
+  }
+  216% {
+    transform: translateX(4260.6px);
+    transition: 1s;
+  }
+  216.4% {
+    transform: translateX(4268.49px);
+    transition: 1s;
+  }
+  216.8% {
+    transform: translateX(4276.38px);
+    transition: 1s;
+  }
+  217.2% {
+    transform: translateX(4284.27px);
+    transition: 1s;
+  }
+  217.6% {
+    transform: translateX(4292.16px);
+    transition: 1s;
+  }
+  218% {
+    transform: translateX(4300.05px);
+    transition: 1s;
+  }
+  218.4% {
+    transform: translateX(4307.94px);
+    transition: 1s;
+  }
+  218.8% {
+    transform: translateX(4315.83px);
+    transition: 1s;
+  }
+  219.2% {
+    transform: translateX(4323.72px);
+    transition: 1s;
+  }
+  219.6% {
+    transform: translateX(4331.61px);
+    transition: 1s;
+  }
+  220% {
+    transform: translateX(4339.5px);
+    transition: 1s;
+  }
+  220.4% {
+    transform: translateX(4347.39px);
+    transition: 1s;
+  }
+  220.8% {
+    transform: translateX(4355.28px);
+    transition: 1s;
+  }
+  221.2% {
+    transform: translateX(4363.17px);
+    transition: 1s;
+  }
+  221.6% {
+    transform: translateX(4371.06px);
+    transition: 1s;
+  }
+  222% {
+    transform: translateX(4378.95px);
+    transition: 1s;
+  }
+  222.4% {
+    transform: translateX(4386.84px);
+    transition: 1s;
+  }
+  222.8% {
+    transform: translateX(4394.73px);
+    transition: 1s;
+  }
+  223.2% {
+    transform: translateX(4402.62px);
+    transition: 1s;
+  }
+  223.6% {
+    transform: translateX(4410.51px);
+    transition: 1s;
+  }
+  224% {
+    transform: translateX(4418.4px);
+    transition: 1s;
+  }
+  224.4% {
+    transform: translateX(4426.29px);
+    transition: 1s;
+  }
+  224.8% {
+    transform: translateX(4434.18px);
+    transition: 1s;
+  }
+  225.2% {
+    transform: translateX(4442.07px);
+    transition: 1s;
+  }
+  225.6% {
+    transform: translateX(4449.96px);
+    transition: 1s;
+  }
+  226% {
+    transform: translateX(4457.85px);
+    transition: 1s;
+  }
+  226.4% {
+    transform: translateX(4465.74px);
+    transition: 1s;
+  }
+  226.8% {
+    transform: translateX(4473.63px);
+    transition: 1s;
+  }
+  227.2% {
+    transform: translateX(4481.52px);
+    transition: 1s;
+  }
+  227.6% {
+    transform: translateX(4489.41px);
+    transition: 1s;
+  }
+  228% {
+    transform: translateX(4497.3px);
+    transition: 1s;
+  }
+  228.4% {
+    transform: translateX(4505.19px);
+    transition: 1s;
+  }
+  228.8% {
+    transform: translateX(4513.08px);
+    transition: 1s;
+  }
+  229.2% {
+    transform: translateX(4520.97px);
+    transition: 1s;
+  }
+  229.6% {
+    transform: translateX(4528.86px);
+    transition: 1s;
+  }
+  230% {
+    transform: translateX(4536.75px);
+    transition: 1s;
+  }
+  230.4% {
+    transform: translateX(4544.64px);
+    transition: 1s;
+  }
+  230.8% {
+    transform: translateX(4552.53px);
+    transition: 1s;
+  }
+  231.2% {
+    transform: translateX(4560.42px);
+    transition: 1s;
+  }
+  231.6% {
+    transform: translateX(4568.31px);
+    transition: 1s;
+  }
+  232% {
+    transform: translateX(4576.2px);
+    transition: 1s;
+  }
+  232.4% {
+    transform: translateX(4584.09px);
+    transition: 1s;
+  }
+  232.8% {
+    transform: translateX(4591.98px);
+    transition: 1s;
+  }
+  233.2% {
+    transform: translateX(4599.87px);
+    transition: 1s;
+  }
+  233.6% {
+    transform: translateX(4607.76px);
+    transition: 1s;
+  }
+  234% {
+    transform: translateX(4615.65px);
+    transition: 1s;
+  }
+  234.4% {
+    transform: translateX(4623.54px);
+    transition: 1s;
+  }
+  234.8% {
+    transform: translateX(4631.43px);
+    transition: 1s;
+  }
+  235.2% {
+    transform: translateX(4639.32px);
+    transition: 1s;
+  }
+  235.6% {
+    transform: translateX(4647.21px);
+    transition: 1s;
+  }
+  236% {
+    transform: translateX(4655.1px);
+    transition: 1s;
+  }
+  236.4% {
+    transform: translateX(4662.99px);
+    transition: 1s;
+  }
+  236.8% {
+    transform: translateX(4670.88px);
+    transition: 1s;
+  }
+  237.2% {
+    transform: translateX(4678.77px);
+    transition: 1s;
+  }
+  237.6% {
+    transform: translateX(4686.66px);
+    transition: 1s;
+  }
+  238% {
+    transform: translateX(4694.55px);
+    transition: 1s;
+  }
+  238.4% {
+    transform: translateX(4702.44px);
+    transition: 1s;
+  }
+  238.8% {
+    transform: translateX(4710.33px);
+    transition: 1s;
+  }
+  239.2% {
+    transform: translateX(4718.22px);
+    transition: 1s;
+  }
+  239.6% {
+    transform: translateX(4726.11px);
+    transition: 1s;
+  }
+  240% {
+    transform: translateX(4734px);
+    transition: 1s;
+  }
+  240.4% {
+    transform: translateX(4741.89px);
+    transition: 1s;
+  }
+  240.8% {
+    transform: translateX(4749.78px);
+    transition: 1s;
+  }
+  241.2% {
+    transform: translateX(4757.67px);
+    transition: 1s;
+  }
+  241.6% {
+    transform: translateX(4765.56px);
+    transition: 1s;
+  }
+  242% {
+    transform: translateX(4773.45px);
+    transition: 1s;
+  }
+  242.4% {
+    transform: translateX(4781.34px);
+    transition: 1s;
+  }
+  242.8% {
+    transform: translateX(4789.23px);
+    transition: 1s;
+  }
+  243.2% {
+    transform: translateX(4797.12px);
+    transition: 1s;
+  }
+  243.6% {
+    transform: translateX(4805.01px);
+    transition: 1s;
+  }
+  244% {
+    transform: translateX(4812.9px);
+    transition: 1s;
+  }
+  244.4% {
+    transform: translateX(4820.79px);
+    transition: 1s;
+  }
+  244.8% {
+    transform: translateX(4828.68px);
+    transition: 1s;
+  }
+  245.2% {
+    transform: translateX(4836.57px);
+    transition: 1s;
+  }
+  245.6% {
+    transform: translateX(4844.46px);
+    transition: 1s;
+  }
+  246% {
+    transform: translateX(4852.35px);
+    transition: 1s;
+  }
+  246.4% {
+    transform: translateX(4860.24px);
+    transition: 1s;
+  }
+  246.8% {
+    transform: translateX(4868.13px);
+    transition: 1s;
+  }
+  247.2% {
+    transform: translateX(4876.02px);
+    transition: 1s;
+  }
+  247.6% {
+    transform: translateX(4883.91px);
+    transition: 1s;
+  }
+  248% {
+    transform: translateX(4891.8px);
+    transition: 1s;
+  }
+  248.4% {
+    transform: translateX(4899.69px);
+    transition: 1s;
+  }
+  248.8% {
+    transform: translateX(4907.58px);
+    transition: 1s;
+  }
+  249.2% {
+    transform: translateX(4915.47px);
+    transition: 1s;
+  }
+  249.6% {
+    transform: translateX(4923.36px);
+    transition: 1s;
+  }
+  250% {
+    transform: translateX(4931.25px);
+    transition: 1s;
+  }
+  250.4% {
+    transform: translateX(4939.14px);
+    transition: 1s;
+  }
+  250.8% {
+    transform: translateX(4947.03px);
+    transition: 1s;
+  }
+  251.2% {
+    transform: translateX(4954.92px);
+    transition: 1s;
+  }
+  251.6% {
+    transform: translateX(4962.81px);
+    transition: 1s;
+  }
+  252% {
+    transform: translateX(4970.7px);
+    transition: 1s;
+  }
+  252.4% {
+    transform: translateX(4978.59px);
+    transition: 1s;
+  }
+  252.8% {
+    transform: translateX(4986.48px);
+    transition: 1s;
+  }
+  253.2% {
+    transform: translateX(4994.37px);
+    transition: 1s;
+  }
+  253.6% {
+    transform: translateX(5002.26px);
+    transition: 1s;
+  }
+  254% {
+    transform: translateX(5010.15px);
+    transition: 1s;
+  }
+  254.4% {
+    transform: translateX(5018.04px);
+    transition: 1s;
+  }
+  254.8% {
+    transform: translateX(5025.93px);
+    transition: 1s;
+  }
+  255.2% {
+    transform: translateX(5033.82px);
+    transition: 1s;
+  }
+  255.6% {
+    transform: translateX(5041.71px);
+    transition: 1s;
+  }
+  256% {
+    transform: translateX(5049.6px);
+    transition: 1s;
+  }
+  256.4% {
+    transform: translateX(5057.49px);
+    transition: 1s;
+  }
+  256.8% {
+    transform: translateX(5065.38px);
+    transition: 1s;
+  }
+  257.2% {
+    transform: translateX(5073.27px);
+    transition: 1s;
+  }
+  257.6% {
+    transform: translateX(5081.16px);
+    transition: 1s;
+  }
+  258% {
+    transform: translateX(5089.05px);
+    transition: 1s;
+  }
+  258.4% {
+    transform: translateX(5096.94px);
+    transition: 1s;
+  }
+  258.8% {
+    transform: translateX(5104.83px);
+    transition: 1s;
+  }
+  259.2% {
+    transform: translateX(5112.72px);
+    transition: 1s;
+  }
+  259.6% {
+    transform: translateX(5120.61px);
+    transition: 1s;
+  }
+  260% {
+    transform: translateX(5128.5px);
+    transition: 1s;
+  }
+  260.4% {
+    transform: translateX(5136.39px);
+    transition: 1s;
+  }
+  260.8% {
+    transform: translateX(5144.28px);
+    transition: 1s;
+  }
+  261.2% {
+    transform: translateX(5152.17px);
+    transition: 1s;
+  }
+  261.6% {
+    transform: translateX(5160.06px);
+    transition: 1s;
+  }
+  262% {
+    transform: translateX(5167.95px);
+    transition: 1s;
+  }
+  262.4% {
+    transform: translateX(5175.84px);
+    transition: 1s;
+  }
+  262.8% {
+    transform: translateX(5183.73px);
+    transition: 1s;
+  }
+  263.2% {
+    transform: translateX(5191.62px);
+    transition: 1s;
+  }
+  263.6% {
+    transform: translateX(5199.51px);
+    transition: 1s;
+  }
+  264% {
+    transform: translateX(5207.4px);
+    transition: 1s;
+  }
+  264.4% {
+    transform: translateX(5215.29px);
+    transition: 1s;
+  }
+  264.8% {
+    transform: translateX(5223.18px);
+    transition: 1s;
+  }
+  265.2% {
+    transform: translateX(5231.07px);
+    transition: 1s;
+  }
+  265.6% {
+    transform: translateX(5238.96px);
+    transition: 1s;
+  }
+  266% {
+    transform: translateX(5246.85px);
+    transition: 1s;
+  }
+  266.4% {
+    transform: translateX(5254.74px);
+    transition: 1s;
+  }
+  266.8% {
+    transform: translateX(5262.63px);
+    transition: 1s;
+  }
+  267.2% {
+    transform: translateX(5270.52px);
+    transition: 1s;
+  }
+  267.6% {
+    transform: translateX(5278.41px);
+    transition: 1s;
+  }
+  268% {
+    transform: translateX(5286.3px);
+    transition: 1s;
+  }
+  268.4% {
+    transform: translateX(5294.19px);
+    transition: 1s;
+  }
+  268.8% {
+    transform: translateX(5302.08px);
+    transition: 1s;
+  }
+  269.2% {
+    transform: translateX(5309.97px);
+    transition: 1s;
+  }
+  269.6% {
+    transform: translateX(5317.86px);
+    transition: 1s;
+  }
+  270% {
+    transform: translateX(5325.75px);
+    transition: 1s;
+  }
+  270.4% {
+    transform: translateX(5333.64px);
+    transition: 1s;
+  }
+  270.8% {
+    transform: translateX(5341.53px);
+    transition: 1s;
+  }
+  271.2% {
+    transform: translateX(5349.42px);
+    transition: 1s;
+  }
+  271.6% {
+    transform: translateX(5357.31px);
+    transition: 1s;
+  }
+  272% {
+    transform: translateX(5365.2px);
+    transition: 1s;
+  }
+  272.4% {
+    transform: translateX(5373.09px);
+    transition: 1s;
+  }
+  272.8% {
+    transform: translateX(5380.98px);
+    transition: 1s;
+  }
+  273.2% {
+    transform: translateX(5388.87px);
+    transition: 1s;
+  }
+  273.6% {
+    transform: translateX(5396.76px);
+    transition: 1s;
+  }
+  274% {
+    transform: translateX(5404.65px);
+    transition: 1s;
+  }
+  274.4% {
+    transform: translateX(5412.54px);
+    transition: 1s;
+  }
+  274.8% {
+    transform: translateX(5420.43px);
+    transition: 1s;
+  }
+  275.2% {
+    transform: translateX(5428.32px);
+    transition: 1s;
+  }
+  275.6% {
+    transform: translateX(5436.21px);
+    transition: 1s;
+  }
+  276% {
+    transform: translateX(5444.1px);
+    transition: 1s;
+  }
+  276.4% {
+    transform: translateX(5451.99px);
+    transition: 1s;
+  }
+  276.8% {
+    transform: translateX(5459.88px);
+    transition: 1s;
+  }
+  277.2% {
+    transform: translateX(5467.77px);
+    transition: 1s;
+  }
+  277.6% {
+    transform: translateX(5475.66px);
+    transition: 1s;
+  }
+  278% {
+    transform: translateX(5483.55px);
+    transition: 1s;
+  }
+  278.4% {
+    transform: translateX(5491.44px);
+    transition: 1s;
+  }
+  278.8% {
+    transform: translateX(5499.33px);
+    transition: 1s;
+  }
+  279.2% {
+    transform: translateX(5507.22px);
+    transition: 1s;
+  }
+  279.6% {
+    transform: translateX(5515.11px);
+    transition: 1s;
+  }
+  280% {
+    transform: translateX(5523px);
+    transition: 1s;
+  }
+}
+@keyframes tilt {
+  0% {
+    transform: translateX(0px);
+    transition: 1s;
+  }
+  0.4% {
+    transform: translateX(7.89px);
+    transition: 1s;
+  }
+  0.8% {
+    transform: translateX(15.78px);
+    transition: 1s;
+  }
+  1.2% {
+    transform: translateX(23.67px);
+    transition: 1s;
+  }
+  1.6% {
+    transform: translateX(31.56px);
+    transition: 1s;
+  }
+  2% {
+    transform: translateX(39.45px);
+    transition: 1s;
+  }
+  2.4% {
+    transform: translateX(47.34px);
+    transition: 1s;
+  }
+  2.8% {
+    transform: translateX(55.23px);
+    transition: 1s;
+  }
+  3.2% {
+    transform: translateX(63.12px);
+    transition: 1s;
+  }
+  3.6% {
+    transform: translateX(71.01px);
+    transition: 1s;
+  }
+  4% {
+    transform: translateX(78.9px);
+    transition: 1s;
+  }
+  4.4% {
+    transform: translateX(86.79px);
+    transition: 1s;
+  }
+  4.8% {
+    transform: translateX(94.68px);
+    transition: 1s;
+  }
+  5.2% {
+    transform: translateX(102.57px);
+    transition: 1s;
+  }
+  5.6% {
+    transform: translateX(110.46px);
+    transition: 1s;
+  }
+  6% {
+    transform: translateX(118.35px);
+    transition: 1s;
+  }
+  6.4% {
+    transform: translateX(126.24px);
+    transition: 1s;
+  }
+  6.8% {
+    transform: translateX(134.13px);
+    transition: 1s;
+  }
+  7.2% {
+    transform: translateX(142.02px);
+    transition: 1s;
+  }
+  7.6% {
+    transform: translateX(149.91px);
+    transition: 1s;
+  }
+  8% {
+    transform: translateX(157.8px);
+    transition: 1s;
+  }
+  8.4% {
+    transform: translateX(165.69px);
+    transition: 1s;
+  }
+  8.8% {
+    transform: translateX(173.58px);
+    transition: 1s;
+  }
+  9.2% {
+    transform: translateX(181.47px);
+    transition: 1s;
+  }
+  9.6% {
+    transform: translateX(189.36px);
+    transition: 1s;
+  }
+  10% {
+    transform: translateX(197.25px);
+    transition: 1s;
+  }
+  10.4% {
+    transform: translateX(205.14px);
+    transition: 1s;
+  }
+  10.8% {
+    transform: translateX(213.03px);
+    transition: 1s;
+  }
+  11.2% {
+    transform: translateX(220.92px);
+    transition: 1s;
+  }
+  11.6% {
+    transform: translateX(228.81px);
+    transition: 1s;
+  }
+  12% {
+    transform: translateX(236.7px);
+    transition: 1s;
+  }
+  12.4% {
+    transform: translateX(244.59px);
+    transition: 1s;
+  }
+  12.8% {
+    transform: translateX(252.48px);
+    transition: 1s;
+  }
+  13.2% {
+    transform: translateX(260.37px);
+    transition: 1s;
+  }
+  13.6% {
+    transform: translateX(268.26px);
+    transition: 1s;
+  }
+  14% {
+    transform: translateX(276.15px);
+    transition: 1s;
+  }
+  14.4% {
+    transform: translateX(284.04px);
+    transition: 1s;
+  }
+  14.8% {
+    transform: translateX(291.93px);
+    transition: 1s;
+  }
+  15.2% {
+    transform: translateX(299.82px);
+    transition: 1s;
+  }
+  15.6% {
+    transform: translateX(307.71px);
+    transition: 1s;
+  }
+  16% {
+    transform: translateX(315.6px);
+    transition: 1s;
+  }
+  16.4% {
+    transform: translateX(323.49px);
+    transition: 1s;
+  }
+  16.8% {
+    transform: translateX(331.38px);
+    transition: 1s;
+  }
+  17.2% {
+    transform: translateX(339.27px);
+    transition: 1s;
+  }
+  17.6% {
+    transform: translateX(347.16px);
+    transition: 1s;
+  }
+  18% {
+    transform: translateX(355.05px);
+    transition: 1s;
+  }
+  18.4% {
+    transform: translateX(362.94px);
+    transition: 1s;
+  }
+  18.8% {
+    transform: translateX(370.83px);
+    transition: 1s;
+  }
+  19.2% {
+    transform: translateX(378.72px);
+    transition: 1s;
+  }
+  19.6% {
+    transform: translateX(386.61px);
+    transition: 1s;
+  }
+  20% {
+    transform: translateX(394.5px);
+    transition: 1s;
+  }
+  20.4% {
+    transform: translateX(402.39px);
+    transition: 1s;
+  }
+  20.8% {
+    transform: translateX(410.28px);
+    transition: 1s;
+  }
+  21.2% {
+    transform: translateX(418.17px);
+    transition: 1s;
+  }
+  21.6% {
+    transform: translateX(426.06px);
+    transition: 1s;
+  }
+  22% {
+    transform: translateX(433.95px);
+    transition: 1s;
+  }
+  22.4% {
+    transform: translateX(441.84px);
+    transition: 1s;
+  }
+  22.8% {
+    transform: translateX(449.73px);
+    transition: 1s;
+  }
+  23.2% {
+    transform: translateX(457.62px);
+    transition: 1s;
+  }
+  23.6% {
+    transform: translateX(465.51px);
+    transition: 1s;
+  }
+  24% {
+    transform: translateX(473.4px);
+    transition: 1s;
+  }
+  24.4% {
+    transform: translateX(481.29px);
+    transition: 1s;
+  }
+  24.8% {
+    transform: translateX(489.18px);
+    transition: 1s;
+  }
+  25.2% {
+    transform: translateX(497.07px);
+    transition: 1s;
+  }
+  25.6% {
+    transform: translateX(504.96px);
+    transition: 1s;
+  }
+  26% {
+    transform: translateX(512.85px);
+    transition: 1s;
+  }
+  26.4% {
+    transform: translateX(520.74px);
+    transition: 1s;
+  }
+  26.8% {
+    transform: translateX(528.63px);
+    transition: 1s;
+  }
+  27.2% {
+    transform: translateX(536.52px);
+    transition: 1s;
+  }
+  27.6% {
+    transform: translateX(544.41px);
+    transition: 1s;
+  }
+  28% {
+    transform: translateX(552.3px);
+    transition: 1s;
+  }
+  28.4% {
+    transform: translateX(560.19px);
+    transition: 1s;
+  }
+  28.8% {
+    transform: translateX(568.08px);
+    transition: 1s;
+  }
+  29.2% {
+    transform: translateX(575.97px);
+    transition: 1s;
+  }
+  29.6% {
+    transform: translateX(583.86px);
+    transition: 1s;
+  }
+  30% {
+    transform: translateX(591.75px);
+    transition: 1s;
+  }
+  30.4% {
+    transform: translateX(599.64px);
+    transition: 1s;
+  }
+  30.8% {
+    transform: translateX(607.53px);
+    transition: 1s;
+  }
+  31.2% {
+    transform: translateX(615.42px);
+    transition: 1s;
+  }
+  31.6% {
+    transform: translateX(623.31px);
+    transition: 1s;
+  }
+  32% {
+    transform: translateX(631.2px);
+    transition: 1s;
+  }
+  32.4% {
+    transform: translateX(639.09px);
+    transition: 1s;
+  }
+  32.8% {
+    transform: translateX(646.98px);
+    transition: 1s;
+  }
+  33.2% {
+    transform: translateX(654.87px);
+    transition: 1s;
+  }
+  33.6% {
+    transform: translateX(662.76px);
+    transition: 1s;
+  }
+  34% {
+    transform: translateX(670.65px);
+    transition: 1s;
+  }
+  34.4% {
+    transform: translateX(678.54px);
+    transition: 1s;
+  }
+  34.8% {
+    transform: translateX(686.43px);
+    transition: 1s;
+  }
+  35.2% {
+    transform: translateX(694.32px);
+    transition: 1s;
+  }
+  35.6% {
+    transform: translateX(702.21px);
+    transition: 1s;
+  }
+  36% {
+    transform: translateX(710.1px);
+    transition: 1s;
+  }
+  36.4% {
+    transform: translateX(717.99px);
+    transition: 1s;
+  }
+  36.8% {
+    transform: translateX(725.88px);
+    transition: 1s;
+  }
+  37.2% {
+    transform: translateX(733.77px);
+    transition: 1s;
+  }
+  37.6% {
+    transform: translateX(741.66px);
+    transition: 1s;
+  }
+  38% {
+    transform: translateX(749.55px);
+    transition: 1s;
+  }
+  38.4% {
+    transform: translateX(757.44px);
+    transition: 1s;
+  }
+  38.8% {
+    transform: translateX(765.33px);
+    transition: 1s;
+  }
+  39.2% {
+    transform: translateX(773.22px);
+    transition: 1s;
+  }
+  39.6% {
+    transform: translateX(781.11px);
+    transition: 1s;
+  }
+  40% {
+    transform: translateX(789px);
+    transition: 1s;
+  }
+  40.4% {
+    transform: translateX(796.89px);
+    transition: 1s;
+  }
+  40.8% {
+    transform: translateX(804.78px);
+    transition: 1s;
+  }
+  41.2% {
+    transform: translateX(812.67px);
+    transition: 1s;
+  }
+  41.6% {
+    transform: translateX(820.56px);
+    transition: 1s;
+  }
+  42% {
+    transform: translateX(828.45px);
+    transition: 1s;
+  }
+  42.4% {
+    transform: translateX(836.34px);
+    transition: 1s;
+  }
+  42.8% {
+    transform: translateX(844.23px);
+    transition: 1s;
+  }
+  43.2% {
+    transform: translateX(852.12px);
+    transition: 1s;
+  }
+  43.6% {
+    transform: translateX(860.01px);
+    transition: 1s;
+  }
+  44% {
+    transform: translateX(867.9px);
+    transition: 1s;
+  }
+  44.4% {
+    transform: translateX(875.79px);
+    transition: 1s;
+  }
+  44.8% {
+    transform: translateX(883.68px);
+    transition: 1s;
+  }
+  45.2% {
+    transform: translateX(891.57px);
+    transition: 1s;
+  }
+  45.6% {
+    transform: translateX(899.46px);
+    transition: 1s;
+  }
+  46% {
+    transform: translateX(907.35px);
+    transition: 1s;
+  }
+  46.4% {
+    transform: translateX(915.24px);
+    transition: 1s;
+  }
+  46.8% {
+    transform: translateX(923.13px);
+    transition: 1s;
+  }
+  47.2% {
+    transform: translateX(931.02px);
+    transition: 1s;
+  }
+  47.6% {
+    transform: translateX(938.91px);
+    transition: 1s;
+  }
+  48% {
+    transform: translateX(946.8px);
+    transition: 1s;
+  }
+  48.4% {
+    transform: translateX(954.69px);
+    transition: 1s;
+  }
+  48.8% {
+    transform: translateX(962.58px);
+    transition: 1s;
+  }
+  49.2% {
+    transform: translateX(970.47px);
+    transition: 1s;
+  }
+  49.6% {
+    transform: translateX(978.36px);
+    transition: 1s;
+  }
+  50% {
+    transform: translateX(986.25px);
+    transition: 1s;
+  }
+  50.4% {
+    transform: translateX(994.14px);
+    transition: 1s;
+  }
+  50.8% {
+    transform: translateX(1002.03px);
+    transition: 1s;
+  }
+  51.2% {
+    transform: translateX(1009.92px);
+    transition: 1s;
+  }
+  51.6% {
+    transform: translateX(1017.81px);
+    transition: 1s;
+  }
+  52% {
+    transform: translateX(1025.7px);
+    transition: 1s;
+  }
+  52.4% {
+    transform: translateX(1033.59px);
+    transition: 1s;
+  }
+  52.8% {
+    transform: translateX(1041.48px);
+    transition: 1s;
+  }
+  53.2% {
+    transform: translateX(1049.37px);
+    transition: 1s;
+  }
+  53.6% {
+    transform: translateX(1057.26px);
+    transition: 1s;
+  }
+  54% {
+    transform: translateX(1065.15px);
+    transition: 1s;
+  }
+  54.4% {
+    transform: translateX(1073.04px);
+    transition: 1s;
+  }
+  54.8% {
+    transform: translateX(1080.93px);
+    transition: 1s;
+  }
+  55.2% {
+    transform: translateX(1088.82px);
+    transition: 1s;
+  }
+  55.6% {
+    transform: translateX(1096.71px);
+    transition: 1s;
+  }
+  56% {
+    transform: translateX(1104.6px);
+    transition: 1s;
+  }
+  56.4% {
+    transform: translateX(1112.49px);
+    transition: 1s;
+  }
+  56.8% {
+    transform: translateX(1120.38px);
+    transition: 1s;
+  }
+  57.2% {
+    transform: translateX(1128.27px);
+    transition: 1s;
+  }
+  57.6% {
+    transform: translateX(1136.16px);
+    transition: 1s;
+  }
+  58% {
+    transform: translateX(1144.05px);
+    transition: 1s;
+  }
+  58.4% {
+    transform: translateX(1151.94px);
+    transition: 1s;
+  }
+  58.8% {
+    transform: translateX(1159.83px);
+    transition: 1s;
+  }
+  59.2% {
+    transform: translateX(1167.72px);
+    transition: 1s;
+  }
+  59.6% {
+    transform: translateX(1175.61px);
+    transition: 1s;
+  }
+  60% {
+    transform: translateX(1183.5px);
+    transition: 1s;
+  }
+  60.4% {
+    transform: translateX(1191.39px);
+    transition: 1s;
+  }
+  60.8% {
+    transform: translateX(1199.28px);
+    transition: 1s;
+  }
+  61.2% {
+    transform: translateX(1207.17px);
+    transition: 1s;
+  }
+  61.6% {
+    transform: translateX(1215.06px);
+    transition: 1s;
+  }
+  62% {
+    transform: translateX(1222.95px);
+    transition: 1s;
+  }
+  62.4% {
+    transform: translateX(1230.84px);
+    transition: 1s;
+  }
+  62.8% {
+    transform: translateX(1238.73px);
+    transition: 1s;
+  }
+  63.2% {
+    transform: translateX(1246.62px);
+    transition: 1s;
+  }
+  63.6% {
+    transform: translateX(1254.51px);
+    transition: 1s;
+  }
+  64% {
+    transform: translateX(1262.4px);
+    transition: 1s;
+  }
+  64.4% {
+    transform: translateX(1270.29px);
+    transition: 1s;
+  }
+  64.8% {
+    transform: translateX(1278.18px);
+    transition: 1s;
+  }
+  65.2% {
+    transform: translateX(1286.07px);
+    transition: 1s;
+  }
+  65.6% {
+    transform: translateX(1293.96px);
+    transition: 1s;
+  }
+  66% {
+    transform: translateX(1301.85px);
+    transition: 1s;
+  }
+  66.4% {
+    transform: translateX(1309.74px);
+    transition: 1s;
+  }
+  66.8% {
+    transform: translateX(1317.63px);
+    transition: 1s;
+  }
+  67.2% {
+    transform: translateX(1325.52px);
+    transition: 1s;
+  }
+  67.6% {
+    transform: translateX(1333.41px);
+    transition: 1s;
+  }
+  68% {
+    transform: translateX(1341.3px);
+    transition: 1s;
+  }
+  68.4% {
+    transform: translateX(1349.19px);
+    transition: 1s;
+  }
+  68.8% {
+    transform: translateX(1357.08px);
+    transition: 1s;
+  }
+  69.2% {
+    transform: translateX(1364.97px);
+    transition: 1s;
+  }
+  69.6% {
+    transform: translateX(1372.86px);
+    transition: 1s;
+  }
+  70% {
+    transform: translateX(1380.75px);
+    transition: 1s;
+  }
+  70.4% {
+    transform: translateX(1388.64px);
+    transition: 1s;
+  }
+  70.8% {
+    transform: translateX(1396.53px);
+    transition: 1s;
+  }
+  71.2% {
+    transform: translateX(1404.42px);
+    transition: 1s;
+  }
+  71.6% {
+    transform: translateX(1412.31px);
+    transition: 1s;
+  }
+  72% {
+    transform: translateX(1420.2px);
+    transition: 1s;
+  }
+  72.4% {
+    transform: translateX(1428.09px);
+    transition: 1s;
+  }
+  72.8% {
+    transform: translateX(1435.98px);
+    transition: 1s;
+  }
+  73.2% {
+    transform: translateX(1443.87px);
+    transition: 1s;
+  }
+  73.6% {
+    transform: translateX(1451.76px);
+    transition: 1s;
+  }
+  74% {
+    transform: translateX(1459.65px);
+    transition: 1s;
+  }
+  74.4% {
+    transform: translateX(1467.54px);
+    transition: 1s;
+  }
+  74.8% {
+    transform: translateX(1475.43px);
+    transition: 1s;
+  }
+  75.2% {
+    transform: translateX(1483.32px);
+    transition: 1s;
+  }
+  75.6% {
+    transform: translateX(1491.21px);
+    transition: 1s;
+  }
+  76% {
+    transform: translateX(1499.1px);
+    transition: 1s;
+  }
+  76.4% {
+    transform: translateX(1506.99px);
+    transition: 1s;
+  }
+  76.8% {
+    transform: translateX(1514.88px);
+    transition: 1s;
+  }
+  77.2% {
+    transform: translateX(1522.77px);
+    transition: 1s;
+  }
+  77.6% {
+    transform: translateX(1530.66px);
+    transition: 1s;
+  }
+  78% {
+    transform: translateX(1538.55px);
+    transition: 1s;
+  }
+  78.4% {
+    transform: translateX(1546.44px);
+    transition: 1s;
+  }
+  78.8% {
+    transform: translateX(1554.33px);
+    transition: 1s;
+  }
+  79.2% {
+    transform: translateX(1562.22px);
+    transition: 1s;
+  }
+  79.6% {
+    transform: translateX(1570.11px);
+    transition: 1s;
+  }
+  80% {
+    transform: translateX(1578px);
+    transition: 1s;
+  }
+  80.4% {
+    transform: translateX(1585.89px);
+    transition: 1s;
+  }
+  80.8% {
+    transform: translateX(1593.78px);
+    transition: 1s;
+  }
+  81.2% {
+    transform: translateX(1601.67px);
+    transition: 1s;
+  }
+  81.6% {
+    transform: translateX(1609.56px);
+    transition: 1s;
+  }
+  82% {
+    transform: translateX(1617.45px);
+    transition: 1s;
+  }
+  82.4% {
+    transform: translateX(1625.34px);
+    transition: 1s;
+  }
+  82.8% {
+    transform: translateX(1633.23px);
+    transition: 1s;
+  }
+  83.2% {
+    transform: translateX(1641.12px);
+    transition: 1s;
+  }
+  83.6% {
+    transform: translateX(1649.01px);
+    transition: 1s;
+  }
+  84% {
+    transform: translateX(1656.9px);
+    transition: 1s;
+  }
+  84.4% {
+    transform: translateX(1664.79px);
+    transition: 1s;
+  }
+  84.8% {
+    transform: translateX(1672.68px);
+    transition: 1s;
+  }
+  85.2% {
+    transform: translateX(1680.57px);
+    transition: 1s;
+  }
+  85.6% {
+    transform: translateX(1688.46px);
+    transition: 1s;
+  }
+  86% {
+    transform: translateX(1696.35px);
+    transition: 1s;
+  }
+  86.4% {
+    transform: translateX(1704.24px);
+    transition: 1s;
+  }
+  86.8% {
+    transform: translateX(1712.13px);
+    transition: 1s;
+  }
+  87.2% {
+    transform: translateX(1720.02px);
+    transition: 1s;
+  }
+  87.6% {
+    transform: translateX(1727.91px);
+    transition: 1s;
+  }
+  88% {
+    transform: translateX(1735.8px);
+    transition: 1s;
+  }
+  88.4% {
+    transform: translateX(1743.69px);
+    transition: 1s;
+  }
+  88.8% {
+    transform: translateX(1751.58px);
+    transition: 1s;
+  }
+  89.2% {
+    transform: translateX(1759.47px);
+    transition: 1s;
+  }
+  89.6% {
+    transform: translateX(1767.36px);
+    transition: 1s;
+  }
+  90% {
+    transform: translateX(1775.25px);
+    transition: 1s;
+  }
+  90.4% {
+    transform: translateX(1783.14px);
+    transition: 1s;
+  }
+  90.8% {
+    transform: translateX(1791.03px);
+    transition: 1s;
+  }
+  91.2% {
+    transform: translateX(1798.92px);
+    transition: 1s;
+  }
+  91.6% {
+    transform: translateX(1806.81px);
+    transition: 1s;
+  }
+  92% {
+    transform: translateX(1814.7px);
+    transition: 1s;
+  }
+  92.4% {
+    transform: translateX(1822.59px);
+    transition: 1s;
+  }
+  92.8% {
+    transform: translateX(1830.48px);
+    transition: 1s;
+  }
+  93.2% {
+    transform: translateX(1838.37px);
+    transition: 1s;
+  }
+  93.6% {
+    transform: translateX(1846.26px);
+    transition: 1s;
+  }
+  94% {
+    transform: translateX(1854.15px);
+    transition: 1s;
+  }
+  94.4% {
+    transform: translateX(1862.04px);
+    transition: 1s;
+  }
+  94.8% {
+    transform: translateX(1869.93px);
+    transition: 1s;
+  }
+  95.2% {
+    transform: translateX(1877.82px);
+    transition: 1s;
+  }
+  95.6% {
+    transform: translateX(1885.71px);
+    transition: 1s;
+  }
+  96% {
+    transform: translateX(1893.6px);
+    transition: 1s;
+  }
+  96.4% {
+    transform: translateX(1901.49px);
+    transition: 1s;
+  }
+  96.8% {
+    transform: translateX(1909.38px);
+    transition: 1s;
+  }
+  97.2% {
+    transform: translateX(1917.27px);
+    transition: 1s;
+  }
+  97.6% {
+    transform: translateX(1925.16px);
+    transition: 1s;
+  }
+  98% {
+    transform: translateX(1933.05px);
+    transition: 1s;
+  }
+  98.4% {
+    transform: translateX(1940.94px);
+    transition: 1s;
+  }
+  98.8% {
+    transform: translateX(1948.83px);
+    transition: 1s;
+  }
+  99.2% {
+    transform: translateX(1956.72px);
+    transition: 1s;
+  }
+  99.6% {
+    transform: translateX(1964.61px);
+    transition: 1s;
+  }
+  100% {
+    transform: translateX(1972.5px);
+    transition: 1s;
+  }
+  100.4% {
+    transform: translateX(1980.39px);
+    transition: 1s;
+  }
+  100.8% {
+    transform: translateX(1988.28px);
+    transition: 1s;
+  }
+  101.2% {
+    transform: translateX(1996.17px);
+    transition: 1s;
+  }
+  101.6% {
+    transform: translateX(2004.06px);
+    transition: 1s;
+  }
+  102% {
+    transform: translateX(2011.95px);
+    transition: 1s;
+  }
+  102.4% {
+    transform: translateX(2019.84px);
+    transition: 1s;
+  }
+  102.8% {
+    transform: translateX(2027.73px);
+    transition: 1s;
+  }
+  103.2% {
+    transform: translateX(2035.62px);
+    transition: 1s;
+  }
+  103.6% {
+    transform: translateX(2043.51px);
+    transition: 1s;
+  }
+  104% {
+    transform: translateX(2051.4px);
+    transition: 1s;
+  }
+  104.4% {
+    transform: translateX(2059.29px);
+    transition: 1s;
+  }
+  104.8% {
+    transform: translateX(2067.18px);
+    transition: 1s;
+  }
+  105.2% {
+    transform: translateX(2075.07px);
+    transition: 1s;
+  }
+  105.6% {
+    transform: translateX(2082.96px);
+    transition: 1s;
+  }
+  106% {
+    transform: translateX(2090.85px);
+    transition: 1s;
+  }
+  106.4% {
+    transform: translateX(2098.74px);
+    transition: 1s;
+  }
+  106.8% {
+    transform: translateX(2106.63px);
+    transition: 1s;
+  }
+  107.2% {
+    transform: translateX(2114.52px);
+    transition: 1s;
+  }
+  107.6% {
+    transform: translateX(2122.41px);
+    transition: 1s;
+  }
+  108% {
+    transform: translateX(2130.3px);
+    transition: 1s;
+  }
+  108.4% {
+    transform: translateX(2138.19px);
+    transition: 1s;
+  }
+  108.8% {
+    transform: translateX(2146.08px);
+    transition: 1s;
+  }
+  109.2% {
+    transform: translateX(2153.97px);
+    transition: 1s;
+  }
+  109.6% {
+    transform: translateX(2161.86px);
+    transition: 1s;
+  }
+  110% {
+    transform: translateX(2169.75px);
+    transition: 1s;
+  }
+  110.4% {
+    transform: translateX(2177.64px);
+    transition: 1s;
+  }
+  110.8% {
+    transform: translateX(2185.53px);
+    transition: 1s;
+  }
+  111.2% {
+    transform: translateX(2193.42px);
+    transition: 1s;
+  }
+  111.6% {
+    transform: translateX(2201.31px);
+    transition: 1s;
+  }
+  112% {
+    transform: translateX(2209.2px);
+    transition: 1s;
+  }
+  112.4% {
+    transform: translateX(2217.09px);
+    transition: 1s;
+  }
+  112.8% {
+    transform: translateX(2224.98px);
+    transition: 1s;
+  }
+  113.2% {
+    transform: translateX(2232.87px);
+    transition: 1s;
+  }
+  113.6% {
+    transform: translateX(2240.76px);
+    transition: 1s;
+  }
+  114% {
+    transform: translateX(2248.65px);
+    transition: 1s;
+  }
+  114.4% {
+    transform: translateX(2256.54px);
+    transition: 1s;
+  }
+  114.8% {
+    transform: translateX(2264.43px);
+    transition: 1s;
+  }
+  115.2% {
+    transform: translateX(2272.32px);
+    transition: 1s;
+  }
+  115.6% {
+    transform: translateX(2280.21px);
+    transition: 1s;
+  }
+  116% {
+    transform: translateX(2288.1px);
+    transition: 1s;
+  }
+  116.4% {
+    transform: translateX(2295.99px);
+    transition: 1s;
+  }
+  116.8% {
+    transform: translateX(2303.88px);
+    transition: 1s;
+  }
+  117.2% {
+    transform: translateX(2311.77px);
+    transition: 1s;
+  }
+  117.6% {
+    transform: translateX(2319.66px);
+    transition: 1s;
+  }
+  118% {
+    transform: translateX(2327.55px);
+    transition: 1s;
+  }
+  118.4% {
+    transform: translateX(2335.44px);
+    transition: 1s;
+  }
+  118.8% {
+    transform: translateX(2343.33px);
+    transition: 1s;
+  }
+  119.2% {
+    transform: translateX(2351.22px);
+    transition: 1s;
+  }
+  119.6% {
+    transform: translateX(2359.11px);
+    transition: 1s;
+  }
+  120% {
+    transform: translateX(2367px);
+    transition: 1s;
+  }
+  120.4% {
+    transform: translateX(2374.89px);
+    transition: 1s;
+  }
+  120.8% {
+    transform: translateX(2382.78px);
+    transition: 1s;
+  }
+  121.2% {
+    transform: translateX(2390.67px);
+    transition: 1s;
+  }
+  121.6% {
+    transform: translateX(2398.56px);
+    transition: 1s;
+  }
+  122% {
+    transform: translateX(2406.45px);
+    transition: 1s;
+  }
+  122.4% {
+    transform: translateX(2414.34px);
+    transition: 1s;
+  }
+  122.8% {
+    transform: translateX(2422.23px);
+    transition: 1s;
+  }
+  123.2% {
+    transform: translateX(2430.12px);
+    transition: 1s;
+  }
+  123.6% {
+    transform: translateX(2438.01px);
+    transition: 1s;
+  }
+  124% {
+    transform: translateX(2445.9px);
+    transition: 1s;
+  }
+  124.4% {
+    transform: translateX(2453.79px);
+    transition: 1s;
+  }
+  124.8% {
+    transform: translateX(2461.68px);
+    transition: 1s;
+  }
+  125.2% {
+    transform: translateX(2469.57px);
+    transition: 1s;
+  }
+  125.6% {
+    transform: translateX(2477.46px);
+    transition: 1s;
+  }
+  126% {
+    transform: translateX(2485.35px);
+    transition: 1s;
+  }
+  126.4% {
+    transform: translateX(2493.24px);
+    transition: 1s;
+  }
+  126.8% {
+    transform: translateX(2501.13px);
+    transition: 1s;
+  }
+  127.2% {
+    transform: translateX(2509.02px);
+    transition: 1s;
+  }
+  127.6% {
+    transform: translateX(2516.91px);
+    transition: 1s;
+  }
+  128% {
+    transform: translateX(2524.8px);
+    transition: 1s;
+  }
+  128.4% {
+    transform: translateX(2532.69px);
+    transition: 1s;
+  }
+  128.8% {
+    transform: translateX(2540.58px);
+    transition: 1s;
+  }
+  129.2% {
+    transform: translateX(2548.47px);
+    transition: 1s;
+  }
+  129.6% {
+    transform: translateX(2556.36px);
+    transition: 1s;
+  }
+  130% {
+    transform: translateX(2564.25px);
+    transition: 1s;
+  }
+  130.4% {
+    transform: translateX(2572.14px);
+    transition: 1s;
+  }
+  130.8% {
+    transform: translateX(2580.03px);
+    transition: 1s;
+  }
+  131.2% {
+    transform: translateX(2587.92px);
+    transition: 1s;
+  }
+  131.6% {
+    transform: translateX(2595.81px);
+    transition: 1s;
+  }
+  132% {
+    transform: translateX(2603.7px);
+    transition: 1s;
+  }
+  132.4% {
+    transform: translateX(2611.59px);
+    transition: 1s;
+  }
+  132.8% {
+    transform: translateX(2619.48px);
+    transition: 1s;
+  }
+  133.2% {
+    transform: translateX(2627.37px);
+    transition: 1s;
+  }
+  133.6% {
+    transform: translateX(2635.26px);
+    transition: 1s;
+  }
+  134% {
+    transform: translateX(2643.15px);
+    transition: 1s;
+  }
+  134.4% {
+    transform: translateX(2651.04px);
+    transition: 1s;
+  }
+  134.8% {
+    transform: translateX(2658.93px);
+    transition: 1s;
+  }
+  135.2% {
+    transform: translateX(2666.82px);
+    transition: 1s;
+  }
+  135.6% {
+    transform: translateX(2674.71px);
+    transition: 1s;
+  }
+  136% {
+    transform: translateX(2682.6px);
+    transition: 1s;
+  }
+  136.4% {
+    transform: translateX(2690.49px);
+    transition: 1s;
+  }
+  136.8% {
+    transform: translateX(2698.38px);
+    transition: 1s;
+  }
+  137.2% {
+    transform: translateX(2706.27px);
+    transition: 1s;
+  }
+  137.6% {
+    transform: translateX(2714.16px);
+    transition: 1s;
+  }
+  138% {
+    transform: translateX(2722.05px);
+    transition: 1s;
+  }
+  138.4% {
+    transform: translateX(2729.94px);
+    transition: 1s;
+  }
+  138.8% {
+    transform: translateX(2737.83px);
+    transition: 1s;
+  }
+  139.2% {
+    transform: translateX(2745.72px);
+    transition: 1s;
+  }
+  139.6% {
+    transform: translateX(2753.61px);
+    transition: 1s;
+  }
+  140% {
+    transform: translateX(2761.5px);
+    transition: 1s;
+  }
+  140.4% {
+    transform: translateX(2769.39px);
+    transition: 1s;
+  }
+  140.8% {
+    transform: translateX(2777.28px);
+    transition: 1s;
+  }
+  141.2% {
+    transform: translateX(2785.17px);
+    transition: 1s;
+  }
+  141.6% {
+    transform: translateX(2793.06px);
+    transition: 1s;
+  }
+  142% {
+    transform: translateX(2800.95px);
+    transition: 1s;
+  }
+  142.4% {
+    transform: translateX(2808.84px);
+    transition: 1s;
+  }
+  142.8% {
+    transform: translateX(2816.73px);
+    transition: 1s;
+  }
+  143.2% {
+    transform: translateX(2824.62px);
+    transition: 1s;
+  }
+  143.6% {
+    transform: translateX(2832.51px);
+    transition: 1s;
+  }
+  144% {
+    transform: translateX(2840.4px);
+    transition: 1s;
+  }
+  144.4% {
+    transform: translateX(2848.29px);
+    transition: 1s;
+  }
+  144.8% {
+    transform: translateX(2856.18px);
+    transition: 1s;
+  }
+  145.2% {
+    transform: translateX(2864.07px);
+    transition: 1s;
+  }
+  145.6% {
+    transform: translateX(2871.96px);
+    transition: 1s;
+  }
+  146% {
+    transform: translateX(2879.85px);
+    transition: 1s;
+  }
+  146.4% {
+    transform: translateX(2887.74px);
+    transition: 1s;
+  }
+  146.8% {
+    transform: translateX(2895.63px);
+    transition: 1s;
+  }
+  147.2% {
+    transform: translateX(2903.52px);
+    transition: 1s;
+  }
+  147.6% {
+    transform: translateX(2911.41px);
+    transition: 1s;
+  }
+  148% {
+    transform: translateX(2919.3px);
+    transition: 1s;
+  }
+  148.4% {
+    transform: translateX(2927.19px);
+    transition: 1s;
+  }
+  148.8% {
+    transform: translateX(2935.08px);
+    transition: 1s;
+  }
+  149.2% {
+    transform: translateX(2942.97px);
+    transition: 1s;
+  }
+  149.6% {
+    transform: translateX(2950.86px);
+    transition: 1s;
+  }
+  150% {
+    transform: translateX(2958.75px);
+    transition: 1s;
+  }
+  150.4% {
+    transform: translateX(2966.64px);
+    transition: 1s;
+  }
+  150.8% {
+    transform: translateX(2974.53px);
+    transition: 1s;
+  }
+  151.2% {
+    transform: translateX(2982.42px);
+    transition: 1s;
+  }
+  151.6% {
+    transform: translateX(2990.31px);
+    transition: 1s;
+  }
+  152% {
+    transform: translateX(2998.2px);
+    transition: 1s;
+  }
+  152.4% {
+    transform: translateX(3006.09px);
+    transition: 1s;
+  }
+  152.8% {
+    transform: translateX(3013.98px);
+    transition: 1s;
+  }
+  153.2% {
+    transform: translateX(3021.87px);
+    transition: 1s;
+  }
+  153.6% {
+    transform: translateX(3029.76px);
+    transition: 1s;
+  }
+  154% {
+    transform: translateX(3037.65px);
+    transition: 1s;
+  }
+  154.4% {
+    transform: translateX(3045.54px);
+    transition: 1s;
+  }
+  154.8% {
+    transform: translateX(3053.43px);
+    transition: 1s;
+  }
+  155.2% {
+    transform: translateX(3061.32px);
+    transition: 1s;
+  }
+  155.6% {
+    transform: translateX(3069.21px);
+    transition: 1s;
+  }
+  156% {
+    transform: translateX(3077.1px);
+    transition: 1s;
+  }
+  156.4% {
+    transform: translateX(3084.99px);
+    transition: 1s;
+  }
+  156.8% {
+    transform: translateX(3092.88px);
+    transition: 1s;
+  }
+  157.2% {
+    transform: translateX(3100.77px);
+    transition: 1s;
+  }
+  157.6% {
+    transform: translateX(3108.66px);
+    transition: 1s;
+  }
+  158% {
+    transform: translateX(3116.55px);
+    transition: 1s;
+  }
+  158.4% {
+    transform: translateX(3124.44px);
+    transition: 1s;
+  }
+  158.8% {
+    transform: translateX(3132.33px);
+    transition: 1s;
+  }
+  159.2% {
+    transform: translateX(3140.22px);
+    transition: 1s;
+  }
+  159.6% {
+    transform: translateX(3148.11px);
+    transition: 1s;
+  }
+  160% {
+    transform: translateX(3156px);
+    transition: 1s;
+  }
+  160.4% {
+    transform: translateX(3163.89px);
+    transition: 1s;
+  }
+  160.8% {
+    transform: translateX(3171.78px);
+    transition: 1s;
+  }
+  161.2% {
+    transform: translateX(3179.67px);
+    transition: 1s;
+  }
+  161.6% {
+    transform: translateX(3187.56px);
+    transition: 1s;
+  }
+  162% {
+    transform: translateX(3195.45px);
+    transition: 1s;
+  }
+  162.4% {
+    transform: translateX(3203.34px);
+    transition: 1s;
+  }
+  162.8% {
+    transform: translateX(3211.23px);
+    transition: 1s;
+  }
+  163.2% {
+    transform: translateX(3219.12px);
+    transition: 1s;
+  }
+  163.6% {
+    transform: translateX(3227.01px);
+    transition: 1s;
+  }
+  164% {
+    transform: translateX(3234.9px);
+    transition: 1s;
+  }
+  164.4% {
+    transform: translateX(3242.79px);
+    transition: 1s;
+  }
+  164.8% {
+    transform: translateX(3250.68px);
+    transition: 1s;
+  }
+  165.2% {
+    transform: translateX(3258.57px);
+    transition: 1s;
+  }
+  165.6% {
+    transform: translateX(3266.46px);
+    transition: 1s;
+  }
+  166% {
+    transform: translateX(3274.35px);
+    transition: 1s;
+  }
+  166.4% {
+    transform: translateX(3282.24px);
+    transition: 1s;
+  }
+  166.8% {
+    transform: translateX(3290.13px);
+    transition: 1s;
+  }
+  167.2% {
+    transform: translateX(3298.02px);
+    transition: 1s;
+  }
+  167.6% {
+    transform: translateX(3305.91px);
+    transition: 1s;
+  }
+  168% {
+    transform: translateX(3313.8px);
+    transition: 1s;
+  }
+  168.4% {
+    transform: translateX(3321.69px);
+    transition: 1s;
+  }
+  168.8% {
+    transform: translateX(3329.58px);
+    transition: 1s;
+  }
+  169.2% {
+    transform: translateX(3337.47px);
+    transition: 1s;
+  }
+  169.6% {
+    transform: translateX(3345.36px);
+    transition: 1s;
+  }
+  170% {
+    transform: translateX(3353.25px);
+    transition: 1s;
+  }
+  170.4% {
+    transform: translateX(3361.14px);
+    transition: 1s;
+  }
+  170.8% {
+    transform: translateX(3369.03px);
+    transition: 1s;
+  }
+  171.2% {
+    transform: translateX(3376.92px);
+    transition: 1s;
+  }
+  171.6% {
+    transform: translateX(3384.81px);
+    transition: 1s;
+  }
+  172% {
+    transform: translateX(3392.7px);
+    transition: 1s;
+  }
+  172.4% {
+    transform: translateX(3400.59px);
+    transition: 1s;
+  }
+  172.8% {
+    transform: translateX(3408.48px);
+    transition: 1s;
+  }
+  173.2% {
+    transform: translateX(3416.37px);
+    transition: 1s;
+  }
+  173.6% {
+    transform: translateX(3424.26px);
+    transition: 1s;
+  }
+  174% {
+    transform: translateX(3432.15px);
+    transition: 1s;
+  }
+  174.4% {
+    transform: translateX(3440.04px);
+    transition: 1s;
+  }
+  174.8% {
+    transform: translateX(3447.93px);
+    transition: 1s;
+  }
+  175.2% {
+    transform: translateX(3455.82px);
+    transition: 1s;
+  }
+  175.6% {
+    transform: translateX(3463.71px);
+    transition: 1s;
+  }
+  176% {
+    transform: translateX(3471.6px);
+    transition: 1s;
+  }
+  176.4% {
+    transform: translateX(3479.49px);
+    transition: 1s;
+  }
+  176.8% {
+    transform: translateX(3487.38px);
+    transition: 1s;
+  }
+  177.2% {
+    transform: translateX(3495.27px);
+    transition: 1s;
+  }
+  177.6% {
+    transform: translateX(3503.16px);
+    transition: 1s;
+  }
+  178% {
+    transform: translateX(3511.05px);
+    transition: 1s;
+  }
+  178.4% {
+    transform: translateX(3518.94px);
+    transition: 1s;
+  }
+  178.8% {
+    transform: translateX(3526.83px);
+    transition: 1s;
+  }
+  179.2% {
+    transform: translateX(3534.72px);
+    transition: 1s;
+  }
+  179.6% {
+    transform: translateX(3542.61px);
+    transition: 1s;
+  }
+  180% {
+    transform: translateX(3550.5px);
+    transition: 1s;
+  }
+  180.4% {
+    transform: translateX(3558.39px);
+    transition: 1s;
+  }
+  180.8% {
+    transform: translateX(3566.28px);
+    transition: 1s;
+  }
+  181.2% {
+    transform: translateX(3574.17px);
+    transition: 1s;
+  }
+  181.6% {
+    transform: translateX(3582.06px);
+    transition: 1s;
+  }
+  182% {
+    transform: translateX(3589.95px);
+    transition: 1s;
+  }
+  182.4% {
+    transform: translateX(3597.84px);
+    transition: 1s;
+  }
+  182.8% {
+    transform: translateX(3605.73px);
+    transition: 1s;
+  }
+  183.2% {
+    transform: translateX(3613.62px);
+    transition: 1s;
+  }
+  183.6% {
+    transform: translateX(3621.51px);
+    transition: 1s;
+  }
+  184% {
+    transform: translateX(3629.4px);
+    transition: 1s;
+  }
+  184.4% {
+    transform: translateX(3637.29px);
+    transition: 1s;
+  }
+  184.8% {
+    transform: translateX(3645.18px);
+    transition: 1s;
+  }
+  185.2% {
+    transform: translateX(3653.07px);
+    transition: 1s;
+  }
+  185.6% {
+    transform: translateX(3660.96px);
+    transition: 1s;
+  }
+  186% {
+    transform: translateX(3668.85px);
+    transition: 1s;
+  }
+  186.4% {
+    transform: translateX(3676.74px);
+    transition: 1s;
+  }
+  186.8% {
+    transform: translateX(3684.63px);
+    transition: 1s;
+  }
+  187.2% {
+    transform: translateX(3692.52px);
+    transition: 1s;
+  }
+  187.6% {
+    transform: translateX(3700.41px);
+    transition: 1s;
+  }
+  188% {
+    transform: translateX(3708.3px);
+    transition: 1s;
+  }
+  188.4% {
+    transform: translateX(3716.19px);
+    transition: 1s;
+  }
+  188.8% {
+    transform: translateX(3724.08px);
+    transition: 1s;
+  }
+  189.2% {
+    transform: translateX(3731.97px);
+    transition: 1s;
+  }
+  189.6% {
+    transform: translateX(3739.86px);
+    transition: 1s;
+  }
+  190% {
+    transform: translateX(3747.75px);
+    transition: 1s;
+  }
+  190.4% {
+    transform: translateX(3755.64px);
+    transition: 1s;
+  }
+  190.8% {
+    transform: translateX(3763.53px);
+    transition: 1s;
+  }
+  191.2% {
+    transform: translateX(3771.42px);
+    transition: 1s;
+  }
+  191.6% {
+    transform: translateX(3779.31px);
+    transition: 1s;
+  }
+  192% {
+    transform: translateX(3787.2px);
+    transition: 1s;
+  }
+  192.4% {
+    transform: translateX(3795.09px);
+    transition: 1s;
+  }
+  192.8% {
+    transform: translateX(3802.98px);
+    transition: 1s;
+  }
+  193.2% {
+    transform: translateX(3810.87px);
+    transition: 1s;
+  }
+  193.6% {
+    transform: translateX(3818.76px);
+    transition: 1s;
+  }
+  194% {
+    transform: translateX(3826.65px);
+    transition: 1s;
+  }
+  194.4% {
+    transform: translateX(3834.54px);
+    transition: 1s;
+  }
+  194.8% {
+    transform: translateX(3842.43px);
+    transition: 1s;
+  }
+  195.2% {
+    transform: translateX(3850.32px);
+    transition: 1s;
+  }
+  195.6% {
+    transform: translateX(3858.21px);
+    transition: 1s;
+  }
+  196% {
+    transform: translateX(3866.1px);
+    transition: 1s;
+  }
+  196.4% {
+    transform: translateX(3873.99px);
+    transition: 1s;
+  }
+  196.8% {
+    transform: translateX(3881.88px);
+    transition: 1s;
+  }
+  197.2% {
+    transform: translateX(3889.77px);
+    transition: 1s;
+  }
+  197.6% {
+    transform: translateX(3897.66px);
+    transition: 1s;
+  }
+  198% {
+    transform: translateX(3905.55px);
+    transition: 1s;
+  }
+  198.4% {
+    transform: translateX(3913.44px);
+    transition: 1s;
+  }
+  198.8% {
+    transform: translateX(3921.33px);
+    transition: 1s;
+  }
+  199.2% {
+    transform: translateX(3929.22px);
+    transition: 1s;
+  }
+  199.6% {
+    transform: translateX(3937.11px);
+    transition: 1s;
+  }
+  200% {
+    transform: translateX(3945px);
+    transition: 1s;
+  }
+  200.4% {
+    transform: translateX(3952.89px);
+    transition: 1s;
+  }
+  200.8% {
+    transform: translateX(3960.78px);
+    transition: 1s;
+  }
+  201.2% {
+    transform: translateX(3968.67px);
+    transition: 1s;
+  }
+  201.6% {
+    transform: translateX(3976.56px);
+    transition: 1s;
+  }
+  202% {
+    transform: translateX(3984.45px);
+    transition: 1s;
+  }
+  202.4% {
+    transform: translateX(3992.34px);
+    transition: 1s;
+  }
+  202.8% {
+    transform: translateX(4000.23px);
+    transition: 1s;
+  }
+  203.2% {
+    transform: translateX(4008.12px);
+    transition: 1s;
+  }
+  203.6% {
+    transform: translateX(4016.01px);
+    transition: 1s;
+  }
+  204% {
+    transform: translateX(4023.9px);
+    transition: 1s;
+  }
+  204.4% {
+    transform: translateX(4031.79px);
+    transition: 1s;
+  }
+  204.8% {
+    transform: translateX(4039.68px);
+    transition: 1s;
+  }
+  205.2% {
+    transform: translateX(4047.57px);
+    transition: 1s;
+  }
+  205.6% {
+    transform: translateX(4055.46px);
+    transition: 1s;
+  }
+  206% {
+    transform: translateX(4063.35px);
+    transition: 1s;
+  }
+  206.4% {
+    transform: translateX(4071.24px);
+    transition: 1s;
+  }
+  206.8% {
+    transform: translateX(4079.13px);
+    transition: 1s;
+  }
+  207.2% {
+    transform: translateX(4087.02px);
+    transition: 1s;
+  }
+  207.6% {
+    transform: translateX(4094.91px);
+    transition: 1s;
+  }
+  208% {
+    transform: translateX(4102.8px);
+    transition: 1s;
+  }
+  208.4% {
+    transform: translateX(4110.69px);
+    transition: 1s;
+  }
+  208.8% {
+    transform: translateX(4118.58px);
+    transition: 1s;
+  }
+  209.2% {
+    transform: translateX(4126.47px);
+    transition: 1s;
+  }
+  209.6% {
+    transform: translateX(4134.36px);
+    transition: 1s;
+  }
+  210% {
+    transform: translateX(4142.25px);
+    transition: 1s;
+  }
+  210.4% {
+    transform: translateX(4150.14px);
+    transition: 1s;
+  }
+  210.8% {
+    transform: translateX(4158.03px);
+    transition: 1s;
+  }
+  211.2% {
+    transform: translateX(4165.92px);
+    transition: 1s;
+  }
+  211.6% {
+    transform: translateX(4173.81px);
+    transition: 1s;
+  }
+  212% {
+    transform: translateX(4181.7px);
+    transition: 1s;
+  }
+  212.4% {
+    transform: translateX(4189.59px);
+    transition: 1s;
+  }
+  212.8% {
+    transform: translateX(4197.48px);
+    transition: 1s;
+  }
+  213.2% {
+    transform: translateX(4205.37px);
+    transition: 1s;
+  }
+  213.6% {
+    transform: translateX(4213.26px);
+    transition: 1s;
+  }
+  214% {
+    transform: translateX(4221.15px);
+    transition: 1s;
+  }
+  214.4% {
+    transform: translateX(4229.04px);
+    transition: 1s;
+  }
+  214.8% {
+    transform: translateX(4236.93px);
+    transition: 1s;
+  }
+  215.2% {
+    transform: translateX(4244.82px);
+    transition: 1s;
+  }
+  215.6% {
+    transform: translateX(4252.71px);
+    transition: 1s;
+  }
+  216% {
+    transform: translateX(4260.6px);
+    transition: 1s;
+  }
+  216.4% {
+    transform: translateX(4268.49px);
+    transition: 1s;
+  }
+  216.8% {
+    transform: translateX(4276.38px);
+    transition: 1s;
+  }
+  217.2% {
+    transform: translateX(4284.27px);
+    transition: 1s;
+  }
+  217.6% {
+    transform: translateX(4292.16px);
+    transition: 1s;
+  }
+  218% {
+    transform: translateX(4300.05px);
+    transition: 1s;
+  }
+  218.4% {
+    transform: translateX(4307.94px);
+    transition: 1s;
+  }
+  218.8% {
+    transform: translateX(4315.83px);
+    transition: 1s;
+  }
+  219.2% {
+    transform: translateX(4323.72px);
+    transition: 1s;
+  }
+  219.6% {
+    transform: translateX(4331.61px);
+    transition: 1s;
+  }
+  220% {
+    transform: translateX(4339.5px);
+    transition: 1s;
+  }
+  220.4% {
+    transform: translateX(4347.39px);
+    transition: 1s;
+  }
+  220.8% {
+    transform: translateX(4355.28px);
+    transition: 1s;
+  }
+  221.2% {
+    transform: translateX(4363.17px);
+    transition: 1s;
+  }
+  221.6% {
+    transform: translateX(4371.06px);
+    transition: 1s;
+  }
+  222% {
+    transform: translateX(4378.95px);
+    transition: 1s;
+  }
+  222.4% {
+    transform: translateX(4386.84px);
+    transition: 1s;
+  }
+  222.8% {
+    transform: translateX(4394.73px);
+    transition: 1s;
+  }
+  223.2% {
+    transform: translateX(4402.62px);
+    transition: 1s;
+  }
+  223.6% {
+    transform: translateX(4410.51px);
+    transition: 1s;
+  }
+  224% {
+    transform: translateX(4418.4px);
+    transition: 1s;
+  }
+  224.4% {
+    transform: translateX(4426.29px);
+    transition: 1s;
+  }
+  224.8% {
+    transform: translateX(4434.18px);
+    transition: 1s;
+  }
+  225.2% {
+    transform: translateX(4442.07px);
+    transition: 1s;
+  }
+  225.6% {
+    transform: translateX(4449.96px);
+    transition: 1s;
+  }
+  226% {
+    transform: translateX(4457.85px);
+    transition: 1s;
+  }
+  226.4% {
+    transform: translateX(4465.74px);
+    transition: 1s;
+  }
+  226.8% {
+    transform: translateX(4473.63px);
+    transition: 1s;
+  }
+  227.2% {
+    transform: translateX(4481.52px);
+    transition: 1s;
+  }
+  227.6% {
+    transform: translateX(4489.41px);
+    transition: 1s;
+  }
+  228% {
+    transform: translateX(4497.3px);
+    transition: 1s;
+  }
+  228.4% {
+    transform: translateX(4505.19px);
+    transition: 1s;
+  }
+  228.8% {
+    transform: translateX(4513.08px);
+    transition: 1s;
+  }
+  229.2% {
+    transform: translateX(4520.97px);
+    transition: 1s;
+  }
+  229.6% {
+    transform: translateX(4528.86px);
+    transition: 1s;
+  }
+  230% {
+    transform: translateX(4536.75px);
+    transition: 1s;
+  }
+  230.4% {
+    transform: translateX(4544.64px);
+    transition: 1s;
+  }
+  230.8% {
+    transform: translateX(4552.53px);
+    transition: 1s;
+  }
+  231.2% {
+    transform: translateX(4560.42px);
+    transition: 1s;
+  }
+  231.6% {
+    transform: translateX(4568.31px);
+    transition: 1s;
+  }
+  232% {
+    transform: translateX(4576.2px);
+    transition: 1s;
+  }
+  232.4% {
+    transform: translateX(4584.09px);
+    transition: 1s;
+  }
+  232.8% {
+    transform: translateX(4591.98px);
+    transition: 1s;
+  }
+  233.2% {
+    transform: translateX(4599.87px);
+    transition: 1s;
+  }
+  233.6% {
+    transform: translateX(4607.76px);
+    transition: 1s;
+  }
+  234% {
+    transform: translateX(4615.65px);
+    transition: 1s;
+  }
+  234.4% {
+    transform: translateX(4623.54px);
+    transition: 1s;
+  }
+  234.8% {
+    transform: translateX(4631.43px);
+    transition: 1s;
+  }
+  235.2% {
+    transform: translateX(4639.32px);
+    transition: 1s;
+  }
+  235.6% {
+    transform: translateX(4647.21px);
+    transition: 1s;
+  }
+  236% {
+    transform: translateX(4655.1px);
+    transition: 1s;
+  }
+  236.4% {
+    transform: translateX(4662.99px);
+    transition: 1s;
+  }
+  236.8% {
+    transform: translateX(4670.88px);
+    transition: 1s;
+  }
+  237.2% {
+    transform: translateX(4678.77px);
+    transition: 1s;
+  }
+  237.6% {
+    transform: translateX(4686.66px);
+    transition: 1s;
+  }
+  238% {
+    transform: translateX(4694.55px);
+    transition: 1s;
+  }
+  238.4% {
+    transform: translateX(4702.44px);
+    transition: 1s;
+  }
+  238.8% {
+    transform: translateX(4710.33px);
+    transition: 1s;
+  }
+  239.2% {
+    transform: translateX(4718.22px);
+    transition: 1s;
+  }
+  239.6% {
+    transform: translateX(4726.11px);
+    transition: 1s;
+  }
+  240% {
+    transform: translateX(4734px);
+    transition: 1s;
+  }
+  240.4% {
+    transform: translateX(4741.89px);
+    transition: 1s;
+  }
+  240.8% {
+    transform: translateX(4749.78px);
+    transition: 1s;
+  }
+  241.2% {
+    transform: translateX(4757.67px);
+    transition: 1s;
+  }
+  241.6% {
+    transform: translateX(4765.56px);
+    transition: 1s;
+  }
+  242% {
+    transform: translateX(4773.45px);
+    transition: 1s;
+  }
+  242.4% {
+    transform: translateX(4781.34px);
+    transition: 1s;
+  }
+  242.8% {
+    transform: translateX(4789.23px);
+    transition: 1s;
+  }
+  243.2% {
+    transform: translateX(4797.12px);
+    transition: 1s;
+  }
+  243.6% {
+    transform: translateX(4805.01px);
+    transition: 1s;
+  }
+  244% {
+    transform: translateX(4812.9px);
+    transition: 1s;
+  }
+  244.4% {
+    transform: translateX(4820.79px);
+    transition: 1s;
+  }
+  244.8% {
+    transform: translateX(4828.68px);
+    transition: 1s;
+  }
+  245.2% {
+    transform: translateX(4836.57px);
+    transition: 1s;
+  }
+  245.6% {
+    transform: translateX(4844.46px);
+    transition: 1s;
+  }
+  246% {
+    transform: translateX(4852.35px);
+    transition: 1s;
+  }
+  246.4% {
+    transform: translateX(4860.24px);
+    transition: 1s;
+  }
+  246.8% {
+    transform: translateX(4868.13px);
+    transition: 1s;
+  }
+  247.2% {
+    transform: translateX(4876.02px);
+    transition: 1s;
+  }
+  247.6% {
+    transform: translateX(4883.91px);
+    transition: 1s;
+  }
+  248% {
+    transform: translateX(4891.8px);
+    transition: 1s;
+  }
+  248.4% {
+    transform: translateX(4899.69px);
+    transition: 1s;
+  }
+  248.8% {
+    transform: translateX(4907.58px);
+    transition: 1s;
+  }
+  249.2% {
+    transform: translateX(4915.47px);
+    transition: 1s;
+  }
+  249.6% {
+    transform: translateX(4923.36px);
+    transition: 1s;
+  }
+  250% {
+    transform: translateX(4931.25px);
+    transition: 1s;
+  }
+  250.4% {
+    transform: translateX(4939.14px);
+    transition: 1s;
+  }
+  250.8% {
+    transform: translateX(4947.03px);
+    transition: 1s;
+  }
+  251.2% {
+    transform: translateX(4954.92px);
+    transition: 1s;
+  }
+  251.6% {
+    transform: translateX(4962.81px);
+    transition: 1s;
+  }
+  252% {
+    transform: translateX(4970.7px);
+    transition: 1s;
+  }
+  252.4% {
+    transform: translateX(4978.59px);
+    transition: 1s;
+  }
+  252.8% {
+    transform: translateX(4986.48px);
+    transition: 1s;
+  }
+  253.2% {
+    transform: translateX(4994.37px);
+    transition: 1s;
+  }
+  253.6% {
+    transform: translateX(5002.26px);
+    transition: 1s;
+  }
+  254% {
+    transform: translateX(5010.15px);
+    transition: 1s;
+  }
+  254.4% {
+    transform: translateX(5018.04px);
+    transition: 1s;
+  }
+  254.8% {
+    transform: translateX(5025.93px);
+    transition: 1s;
+  }
+  255.2% {
+    transform: translateX(5033.82px);
+    transition: 1s;
+  }
+  255.6% {
+    transform: translateX(5041.71px);
+    transition: 1s;
+  }
+  256% {
+    transform: translateX(5049.6px);
+    transition: 1s;
+  }
+  256.4% {
+    transform: translateX(5057.49px);
+    transition: 1s;
+  }
+  256.8% {
+    transform: translateX(5065.38px);
+    transition: 1s;
+  }
+  257.2% {
+    transform: translateX(5073.27px);
+    transition: 1s;
+  }
+  257.6% {
+    transform: translateX(5081.16px);
+    transition: 1s;
+  }
+  258% {
+    transform: translateX(5089.05px);
+    transition: 1s;
+  }
+  258.4% {
+    transform: translateX(5096.94px);
+    transition: 1s;
+  }
+  258.8% {
+    transform: translateX(5104.83px);
+    transition: 1s;
+  }
+  259.2% {
+    transform: translateX(5112.72px);
+    transition: 1s;
+  }
+  259.6% {
+    transform: translateX(5120.61px);
+    transition: 1s;
+  }
+  260% {
+    transform: translateX(5128.5px);
+    transition: 1s;
+  }
+  260.4% {
+    transform: translateX(5136.39px);
+    transition: 1s;
+  }
+  260.8% {
+    transform: translateX(5144.28px);
+    transition: 1s;
+  }
+  261.2% {
+    transform: translateX(5152.17px);
+    transition: 1s;
+  }
+  261.6% {
+    transform: translateX(5160.06px);
+    transition: 1s;
+  }
+  262% {
+    transform: translateX(5167.95px);
+    transition: 1s;
+  }
+  262.4% {
+    transform: translateX(5175.84px);
+    transition: 1s;
+  }
+  262.8% {
+    transform: translateX(5183.73px);
+    transition: 1s;
+  }
+  263.2% {
+    transform: translateX(5191.62px);
+    transition: 1s;
+  }
+  263.6% {
+    transform: translateX(5199.51px);
+    transition: 1s;
+  }
+  264% {
+    transform: translateX(5207.4px);
+    transition: 1s;
+  }
+  264.4% {
+    transform: translateX(5215.29px);
+    transition: 1s;
+  }
+  264.8% {
+    transform: translateX(5223.18px);
+    transition: 1s;
+  }
+  265.2% {
+    transform: translateX(5231.07px);
+    transition: 1s;
+  }
+  265.6% {
+    transform: translateX(5238.96px);
+    transition: 1s;
+  }
+  266% {
+    transform: translateX(5246.85px);
+    transition: 1s;
+  }
+  266.4% {
+    transform: translateX(5254.74px);
+    transition: 1s;
+  }
+  266.8% {
+    transform: translateX(5262.63px);
+    transition: 1s;
+  }
+  267.2% {
+    transform: translateX(5270.52px);
+    transition: 1s;
+  }
+  267.6% {
+    transform: translateX(5278.41px);
+    transition: 1s;
+  }
+  268% {
+    transform: translateX(5286.3px);
+    transition: 1s;
+  }
+  268.4% {
+    transform: translateX(5294.19px);
+    transition: 1s;
+  }
+  268.8% {
+    transform: translateX(5302.08px);
+    transition: 1s;
+  }
+  269.2% {
+    transform: translateX(5309.97px);
+    transition: 1s;
+  }
+  269.6% {
+    transform: translateX(5317.86px);
+    transition: 1s;
+  }
+  270% {
+    transform: translateX(5325.75px);
+    transition: 1s;
+  }
+  270.4% {
+    transform: translateX(5333.64px);
+    transition: 1s;
+  }
+  270.8% {
+    transform: translateX(5341.53px);
+    transition: 1s;
+  }
+  271.2% {
+    transform: translateX(5349.42px);
+    transition: 1s;
+  }
+  271.6% {
+    transform: translateX(5357.31px);
+    transition: 1s;
+  }
+  272% {
+    transform: translateX(5365.2px);
+    transition: 1s;
+  }
+  272.4% {
+    transform: translateX(5373.09px);
+    transition: 1s;
+  }
+  272.8% {
+    transform: translateX(5380.98px);
+    transition: 1s;
+  }
+  273.2% {
+    transform: translateX(5388.87px);
+    transition: 1s;
+  }
+  273.6% {
+    transform: translateX(5396.76px);
+    transition: 1s;
+  }
+  274% {
+    transform: translateX(5404.65px);
+    transition: 1s;
+  }
+  274.4% {
+    transform: translateX(5412.54px);
+    transition: 1s;
+  }
+  274.8% {
+    transform: translateX(5420.43px);
+    transition: 1s;
+  }
+  275.2% {
+    transform: translateX(5428.32px);
+    transition: 1s;
+  }
+  275.6% {
+    transform: translateX(5436.21px);
+    transition: 1s;
+  }
+  276% {
+    transform: translateX(5444.1px);
+    transition: 1s;
+  }
+  276.4% {
+    transform: translateX(5451.99px);
+    transition: 1s;
+  }
+  276.8% {
+    transform: translateX(5459.88px);
+    transition: 1s;
+  }
+  277.2% {
+    transform: translateX(5467.77px);
+    transition: 1s;
+  }
+  277.6% {
+    transform: translateX(5475.66px);
+    transition: 1s;
+  }
+  278% {
+    transform: translateX(5483.55px);
+    transition: 1s;
+  }
+  278.4% {
+    transform: translateX(5491.44px);
+    transition: 1s;
+  }
+  278.8% {
+    transform: translateX(5499.33px);
+    transition: 1s;
+  }
+  279.2% {
+    transform: translateX(5507.22px);
+    transition: 1s;
+  }
+  279.6% {
+    transform: translateX(5515.11px);
+    transition: 1s;
+  }
+  280% {
+    transform: translateX(5523px);
+    transition: 1s;
+  }
+}
+.projects .detailed-project {
+  padding: 4em 5em 2em 10em !important;
+}
+.projects .detailed-project .fa-arrow-right {
+  font-size: 2rem;
+  color: #f79784;
+  transition: 0.5s;
+}
+.projects .detailed-project:hover .fa-arrow-right {
+  font-size: 2.4rem;
+}
+
+.animated-button {
+  background-color: rgb(116, 116, 238);
+  border-radius: 10px;
+  padding: 8px;
+  transition: 0.5s;
+  margin-left: 1em;
+}
+
+.animated-button:focus {
+  background-color: rgb(70, 160, 84);
+}
+
+.animated-button:hover {
+  background-color: rgb(65, 65, 246);
+}
+
+.tick {
+  font-size: 18px;
+  display: none;
+  transition: 0.5s;
+}
+
+.submit {
+  transition: 0.5s;
+}
+
+.entry {
+  background-color: #0a0a0a;
+  display: none;
+  transition: all 1.5s;
+  font-size: 2.4rem;
+}
+
+@media all and (max-width: 1200px) {
+  .nav ul .nav-item {
+    margin-left: 2em;
+  }
+
+  .service .section-subheading {
+    font-size: 1.8rem;
+    margin-bottom: -0.4em;
+  }
+
+  .service .details {
+    font-size: medium;
+  }
+
+  .service ul li {
+    font-size: 1rem;
+  }
+
+  .skills .skill-det .skill-des {
+    font-size: 1.8rem;
+    margin-bottom: -0.4em;
+  }
+  .skills .skill-det .subskill {
+    font-size: medium;
+  }
+  .skills .skill-det {
+    padding-left: 10em;
+  }
+
+  .contact .contact-subhead {
+    font-size: 1.8rem;
+  }
+  .contact .address .cnt-detail {
+    font-size: medium;
+  }
+  .contact .address .location {
+    font-size: 1rem;
+  }
+  .contact .address .location i {
+    font-size: 1rem;
+  }
+
+  .hide {
+    display: unset;
+  }
+  .hide i {
+    padding-left: 8px;
+  }
+}
+@media all and (max-width: 992px) {
+  .nav-link:after {
+    display: none;
+  }
+
+  .hero .hero-section img {
+    width: 80%;
+  }
+
+  .rotated {
+    display: none;
+  }
+
+  .head-quote {
+    font-size: 2rem;
+  }
+
+  .container {
+    padding-left: 4em;
+    padding-right: 4em;
+    padding-top: 5em;
+  }
+
+  .service .my-services {
+    white-space: nowrap;
+  }
+  .service .section-subheading {
+    font-size: 2rem;
+  }
+  .service ul li {
+    font-size: 1rem;
+  }
+  .service .image-section img {
+    padding-left: 4em;
+    padding-top: 8em;
+    width: 180%;
+  }
+
+  .skills .skill-row img {
+    width: 180%;
+    margin-top: 3em;
+    margin-left: -2em;
+  }
+
+  .service .section-subheading {
+    font-size: 1.4rem;
+    margin-bottom: -0.4em;
+  }
+
+  .service .details {
+    font-size: medium;
+  }
+
+  .service ul li {
+    font-size: 1rem;
+  }
+
+  .skills .skill-row {
+    padding-left: 2em;
+  }
+  .skills .skill-det .skill-des {
+    font-size: 1.4rem;
+    margin-bottom: -0.4em;
+  }
+  .skills .skill-det .subskill {
+    font-size: medium;
+  }
+  .skills .skill-det {
+    padding-left: 7.6em;
+  }
+
+  .contact .contact-subhead {
+    font-size: 1.4rem;
+  }
+  .contact .address {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+  .contact .address .cnt-detail {
+    font-size: medium;
+  }
+  .contact .address .location {
+    font-size: 0.8rem;
+  }
+
+  .projects .project-row img {
+    border: 10px solid #ebebeb;
+  }
+
+  .projects .sub-p {
+    font-size: 1.4rem;
+  }
+}
+@media all and (max-width: 768px) {
+  .service .image-section img {
+    padding-left: 4em;
+    padding-top: 4em;
+    width: 100%;
+  }
+
+  .skills .skill-row img {
+    width: 160%;
+    margin-top: 1em;
+    padding-left: 0em;
+  }
+
+  .skills .skill-det {
+    padding-left: 2em;
+  }
+
+  .projects .detailed-project {
+    padding-top: 1em !important;
+    font-size: 0.8rem;
+  }
+  .projects .detailed-project .fa-arrow-right {
+    font-size: 1rem;
+  }
+
+  .projects .detailed-project:hover .fa-arrow-right {
+    font-size: 1.2rem;
+  }
+
+  .projects .project-row img {
+    max-width: 70%;
+  }
+}
+@media all and (max-width: 428px) {
+  .navbar-brand {
+    font-size: 2rem;
+  }
+
+  .subhead {
+    font-size: 0.7rem;
+  }
+
+  .title {
+    font-size: large;
+  }
+
+  .head-quote {
+    font-size: 1.2rem;
+  }
+
+  .container {
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 5em;
+  }
+
+  .service .my-services {
+    white-space: nowrap;
+  }
+  .service .section-subheading {
+    font-size: 1rem;
+  }
+  .service ul li {
+    font-size: 1rem;
+  }
+  .service .image-section img {
+    padding-left: 0em;
+    padding-top: 4em;
+    width: 120%;
+  }
+
+  .skills .skill-row img {
+    width: 120%;
+  }
+
+  .skills .skill-det .skill-des {
+    font-size: 1rem;
+  }
+
+  .skills .skill-row {
+    padding-right: 2em;
+  }
+
+  textarea {
+    width: 20rem;
+    height: 4rem;
+  }
+
+  .form {
+    font-size: 0.8rem;
+  }
+
+  .projects .project-row img {
+    max-width: 90%;
+  }
+}
+@media all and (max-width: 376px) {
+  .navbar-brand {
+    font-size: 1.5rem !important;
+  }
+
+  .head-quote {
+    font-size: 1rem;
+  }
+
+  .projects .detailed-project {
+    padding-top: 0.5em !important;
+    padding-left: 2em !important;
+    padding-right: 1em !important;
+  }
+  .projects .detailed-project .fa-arrow-right {
+    font-size: 0.8rem;
+  }
+
+  .projects .detailed-project:hover .fa-arrow-right {
+    font-size: 1rem;
+  }
+
+  .projects .project-row img {
+    max-width: 120%;
+  }
+
+  .projects .sub-p {
+    font-size: 1.2rem;
+  }
+}/*# sourceMappingURL=style.css.map */
