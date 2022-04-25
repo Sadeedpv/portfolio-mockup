@@ -395,7 +395,7 @@ section{
             opacity: 65%;
             transition: all 1s;
             border-radius: 10px;
-            transition: animation 1s;
+            transition: all 80ms;
             border: 15px solid #ebebeb;
             position: relative;
             animation-name: none;
@@ -682,7 +682,7 @@ section{
         font-size: large;
     }
     .head-quote{
-        font-size: 1.2rem;
+        font-size: 1.4rem;
     }
     .container{
         padding-left: 2em;
@@ -736,7 +736,7 @@ section{
         font-size: 1.5rem !important;
     }
     .head-quote{
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
     .projects .detailed-project {
         padding-top: 0.5em !important;

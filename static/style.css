@@ -379,9 +379,7 @@ section {
   opacity: 65%;
   transition: all 1s;
   border-radius: 10px;
-  transition: -webkit-animation 1s;
-  transition: animation 1s;
-  transition: animation 1s, -webkit-animation 1s;
+  transition: all 80ms;
   border: 15px solid #ebebeb;
   position: relative;
   -webkit-animation-name: none;
@@ -6266,7 +6264,7 @@ section {
   }
 
   .head-quote {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
 
   .container {
@@ -6321,7 +6319,7 @@ section {
   }
 
   .head-quote {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 
   .projects .detailed-project {

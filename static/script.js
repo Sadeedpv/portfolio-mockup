@@ -71,7 +71,7 @@ function blankout(){
     logo.style.display = 'block';
     logo.style.height = `${1 * window.innerHeight}px`;
     if (window.innerWidth < 992){
-        logo.style.paddingBottom = '10em';
+        logo.style.paddingBottom = '4em';
     }
     // logo.style.transition = 'cubic-bezier(.55,.05,.5,.75)';
 
