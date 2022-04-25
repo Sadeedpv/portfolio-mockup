@@ -69,7 +69,6 @@ function blankout(){
     lst_of_welcome = ['Willkommen!', 'Bienvenue !', 'स्वागत हे', 'Hoşgeldiniz', 'καλως ΗΡΘΑΤΕ', 'أهلا بك', '欢迎', 'Welcome']
     var logo = document.querySelector('.entry');
     logo.style.display = 'block';
-    logo.style.paddingTop = `${window.innerHeight/ 3}px`;
     logo.style.height = `${1 * window.innerHeight}px`;
     document.documentElement.scrollTop = 0;
     document.body.scrollTop = 0;
