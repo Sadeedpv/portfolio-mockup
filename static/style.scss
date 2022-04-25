@@ -461,7 +461,7 @@ section{
 .entry{
     background-color: #0a0a0a;
     display: none;
-    transition: all 1.5s;
+    transition: all 1.5s cubic-bezier(.91,.34,.61,.5);
     font-size: 2.4rem;
     display: grid;
     place-items: center;

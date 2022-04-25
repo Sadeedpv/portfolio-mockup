@@ -70,6 +70,9 @@ function blankout(){
     var logo = document.querySelector('.entry');
     logo.style.display = 'block';
     logo.style.height = `${1 * window.innerHeight}px`;
+    // logo.style.transition = 'cubic-bezier(.55,.05,.5,.75)';
+
+
     document.documentElement.scrollTop = 0;
     document.body.scrollTop = 0;
     
@@ -95,6 +98,7 @@ function blankin(){
         var logo = document.querySelector('.entry');
         logo.style.height = '0px';
         logo.style.paddingTop = '0px';
+        // logo.style.transition = 'cubic-bezier(.55,.05,.5,.75)';
         // logo.style.display = 'none';
 
         document.body.style.overflowY = "scroll";

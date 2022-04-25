@@ -6050,7 +6050,7 @@ section {
 .entry {
   background-color: #0a0a0a;
   display: none;
-  transition: all 1.5s;
+  transition: all 1.5s cubic-bezier(0.91, 0.34, 0.61, 0.5);
   font-size: 2.4rem;
   display: grid;
   place-items: center;
