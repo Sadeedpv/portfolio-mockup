@@ -97,7 +97,7 @@ function blankin(){
     setTimeout(() => {
         var logo = document.querySelector('.entry');
         logo.style.height = '0px';
-        logo.style.paddingTop = '0px';
+        // logo.style.paddingTop = '0px';
         // logo.style.transition = 'cubic-bezier(.55,.05,.5,.75)';
         // logo.style.display = 'none';
 

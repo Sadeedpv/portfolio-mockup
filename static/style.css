@@ -28,6 +28,9 @@ html {
 
 body {
   overflow-x: hidden;
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 section {
@@ -6235,6 +6238,18 @@ section {
 
   .projects .project-row img {
     max-width: 70%;
+  }
+
+  html, body {
+    overflow-x: hidden !important;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: transparent;
   }
 }
 @media all and (max-width: 428px) {

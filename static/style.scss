@@ -37,8 +37,16 @@ html{
 }
 body{
     overflow-x: hidden;
+    position: relative;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+         box-sizing: border-box;
+
 
 }
+
+
 section{
     max-width: 100%;
 }
@@ -650,6 +658,17 @@ section{
     .projects .project-row img{
         max-width: 70%;
     }
+
+    html,body{
+        overflow-x: hidden !important;
+    }
+    ::-webkit-scrollbar-track {
+        background: transparent; 
+      }
+    
+      ::-webkit-scrollbar-thumb{
+          background: transparent;
+      }
 }
 
 @media all and (max-width:428px){
