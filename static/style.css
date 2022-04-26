@@ -299,6 +299,7 @@ section {
   transform: translateY(40%);
   opacity: 0;
   transition: all 1.2s ease-in-out;
+  max-width: 125%;
 }
 
 .head-quote {
@@ -6204,6 +6205,10 @@ section {
     opacity: 1;
     transition: all 1.2s ease-in-out;
   }
+
+  .nav .navbar-toggler {
+    margin-right: 2em;
+  }
 }
 @media all and (max-width: 768px) {
   .service .image-section img {
@@ -6242,12 +6247,12 @@ section {
     overflow-x: hidden !important;
   }
 
-  ::-webkit-scrollbar-track {
-    background: transparent;
+  ::-webkit-scrollbar {
+    width: 0px;
   }
 
-  ::-webkit-scrollbar-thumb {
-    background: transparent;
+  .nav .navbar-toggler {
+    margin-right: 2em;
   }
 }
 @media all and (max-width: 428px) {
