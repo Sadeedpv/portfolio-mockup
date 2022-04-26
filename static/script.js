@@ -110,7 +110,7 @@ function blankin(){
             element.style.display = 'block';
         });
                 
-    }, 8000)
+    }, 7000)
 }
 
 
