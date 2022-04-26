@@ -1,10 +1,11 @@
 window.onload = () => {
-    nightmode();
+    // nightmode();
     backtotop();
     submitted();
     // tilt();
     blankout();
     blankin();
+    display();
 }
 
 function nightmode(){
@@ -113,6 +114,9 @@ function blankin(){
 }
 
 
+function display(){
+}
+
 
 window.onscroll = () => {
     buttonvisual();
@@ -214,3 +218,4 @@ function tilted(){
 
     })
 }
+

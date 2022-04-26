@@ -476,6 +476,18 @@ section{
     place-items: center;
 }
 
+.modal-body{
+    padding: 3em;
+}
+
+#closed:hover{
+    color: #261a1a !important;
+}
+
+.modal{
+    // margin-left: 2em;
+    margin-right: 3em;
+}
 
 
 
@@ -632,7 +644,7 @@ section{
         transition: all 1.2s ease-in-out;
     }
     .nav .navbar-toggler {
-        margin-right: 2em;
+        margin-right: 1.4em;
   }
 }
 @media all and (max-width:768px){
@@ -677,7 +689,7 @@ section{
         width: 0px;
       }
       .nav .navbar-toggler {
-          margin-right: 2em;
+          margin-right: 1.6em;
     }
 }
 

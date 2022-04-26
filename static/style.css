@@ -6058,6 +6058,18 @@ section {
   place-items: center;
 }
 
+.modal-body {
+  padding: 3em;
+}
+
+#closed:hover {
+  color: #261a1a !important;
+}
+
+.modal {
+  margin-right: 3em;
+}
+
 @media all and (max-width: 1200px) {
   .nav ul .nav-item {
     margin-left: 2em;
@@ -6207,7 +6219,7 @@ section {
   }
 
   .nav .navbar-toggler {
-    margin-right: 2em;
+    margin-right: 1.4em;
   }
 }
 @media all and (max-width: 768px) {
@@ -6252,7 +6264,7 @@ section {
   }
 
   .nav .navbar-toggler {
-    margin-right: 2em;
+    margin-right: 1.6em;
   }
 }
 @media all and (max-width: 428px) {
