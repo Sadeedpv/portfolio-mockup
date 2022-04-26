@@ -6253,6 +6253,7 @@ section {
 
   .projects .project-row img {
     max-width: 70%;
+    opacity: 80%;
   }
 
   html, body {
@@ -6328,6 +6329,10 @@ section {
 
   .projects .project-row img {
     max-width: 90%;
+  }
+
+  .footer {
+    font-size: 0.7rem;
   }
 }
 @media all and (max-width: 376px) {
