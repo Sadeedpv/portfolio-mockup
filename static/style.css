@@ -68,10 +68,17 @@ section {
   color: #75a9d6;
   white-space: nowrap;
 }
+.nav ul .nav-item .active {
+  color: #75a9d6 !important;
+  transform: scale(1.5);
+}
+.nav ul .nav-item .active::first-letter {
+  color: #f79784;
+}
 .nav ul .nav-item .nav-link:after {
   position: absolute;
   content: "";
-  background-color: #75a9d6;
+  background-color: #75a9d6 !important;
   width: 0;
   height: 3px;
   left: 0;

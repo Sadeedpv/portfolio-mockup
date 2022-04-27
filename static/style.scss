@@ -81,10 +81,17 @@ section{
             color: $var1 ;
             white-space: nowrap;
         }
+        .active{
+            color: $var1 !important;
+            transform: scale(1.5);
+        }
+        .active::first-letter{
+            color: $var2;
+        }
         .nav-link:after{
             position: absolute;
             content: "";
-            background-color: $var1;
+            background-color: $var1 !important;
             width: 0;
             height: 3px;
             left: 0;
