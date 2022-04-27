@@ -1,4 +1,6 @@
 window.onload = () => {
+    // Preloading js
+    preload();
     // nightmode();
     backtotop();
     submitted();
@@ -6,6 +8,13 @@ window.onload = () => {
     blankout();
     blankin();
     display();
+}
+function preload(){
+    var content = document.querySelector('.precontent');
+    var real_content = document.querySelector('.totalbody');
+    content.style.opacity = '0';
+    content.style.display = 'none';
+    real_content.style.display = 'unset';    
 }
 
 function nightmode(){
