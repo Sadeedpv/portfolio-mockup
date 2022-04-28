@@ -70,7 +70,6 @@ section {
 }
 .nav ul .nav-item .active {
   color: #75a9d6 !important;
-  transform: scale(1.5);
 }
 .nav ul .nav-item .active::first-letter {
   color: #f79784;
@@ -6082,23 +6081,17 @@ section {
 }
 
 .precontent {
-  width: 100%;
+  width: 100vw;
   height: 100vh !important;
-  background-color: #0a0a0a;
+  background-color: rgb(10, 6, 70);
   position: relative;
-  border: 3px solid white;
   font-size: 1rem;
-  align-items: center;
   transition: 500ms ease-out;
 }
 .precontent .pretext {
   position: absolute;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   font-size: 2rem;
-}
-.precontent .precircle {
   border: 12px solid #234969;
   border-top-color: #75a9d6;
   background-color: transparent;
@@ -6107,8 +6100,8 @@ section {
           animation: spin 1.5s infinite linear;
   width: 75px;
   height: 75px;
-  display: unset;
   position: absolute;
+  display: unset;
 }
 
 @-webkit-keyframes spin {

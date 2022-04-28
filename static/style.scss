@@ -83,7 +83,6 @@ section{
         }
         .active{
             color: $var1 !important;
-            transform: scale(1.5);
         }
         .active::first-letter{
             color: $var2;
@@ -501,22 +500,16 @@ section{
 }
 
 .precontent{
-    width: 100%;
+    width: 100vw;
     height: 100vh !important;
-    background-color: $var3;
+    background-color: rgb(10, 6, 70);
     position: relative;
-    border: 3px solid white;
     font-size: 1rem;
-    align-items: center;
     transition: 500ms ease-out;
     .pretext{
         position: absolute;
         top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
         font-size: 2rem;
-    }
-    .precircle{
         border: 12px solid $var5;
         border-top-color: $var1;
         background-color: transparent;
@@ -524,9 +517,8 @@ section{
         animation: spin 1.5s infinite linear;
         width: 75px;
         height: 75px;
-        display: unset;
         position: absolute;
-
+        display: unset;
     }
 }
 
