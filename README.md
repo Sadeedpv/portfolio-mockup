@@ -1,5 +1,5 @@
 # Revathi.com
-# This is a website made with pure HTML, CSS  and JAVASCRIPT 🔥
+# This is a website made with HTML, CSS JAVASCRIPT and BOOTSTRAP🔥
 
 ### Feel free to make changes to the website and contribute in your own way.
 
