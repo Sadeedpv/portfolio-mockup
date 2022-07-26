@@ -96,7 +96,7 @@ section{
             left: 0;
             bottom: -6px;
             transition: $animate;
-            transition-duration: 0.75s;
+            transition-duration: 350ms;
         }
         .nav-link:hover{
             color: $var1;
@@ -361,7 +361,7 @@ section{
 // custom scrollabar
 /* width */
 ::-webkit-scrollbar {
-    width: 12px;
+    width: 5px;
   }
   
   /* Track */

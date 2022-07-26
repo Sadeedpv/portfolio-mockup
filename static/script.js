@@ -101,7 +101,7 @@ function blankout(){
             i++;
         }
         
-    }, 350);
+    }, 200);
     
 
 }
@@ -119,7 +119,7 @@ function blankin(){
             element.style.display = 'block';
         });
                 
-    }, 7000)
+    }, 4000)
 }
 
 

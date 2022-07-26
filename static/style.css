@@ -83,7 +83,7 @@ section {
   left: 0;
   bottom: -6px;
   transition: all 0.2s ease-in-out;
-  transition-duration: 0.75s;
+  transition-duration: 350ms;
 }
 .nav ul .nav-item .nav-link:hover {
   color: #75a9d6;
@@ -350,7 +350,7 @@ section {
 }
 /* width */
 ::-webkit-scrollbar {
-  width: 12px;
+  width: 5px;
 }
 
 /* Track */
@@ -6119,20 +6119,16 @@ section {
   .nav ul .nav-item {
     margin-left: 2em;
   }
-
   .service .section-subheading {
     font-size: 1.8rem;
     margin-bottom: -0.4em;
   }
-
   .service .details {
     font-size: medium;
   }
-
   .service ul li {
     font-size: 1rem;
   }
-
   .skills .skill-det .skill-des {
     font-size: 1.8rem;
     margin-bottom: -0.4em;
@@ -6143,7 +6139,6 @@ section {
   .skills .skill-det {
     padding-left: 10em;
   }
-
   .contact .contact-subhead {
     font-size: 1.8rem;
   }
@@ -6156,7 +6151,6 @@ section {
   .contact .address .location i {
     font-size: 1rem;
   }
-
   .hide {
     display: unset;
   }
@@ -6168,25 +6162,20 @@ section {
   .nav-link:after {
     display: none;
   }
-
   .hero .hero-section img {
     width: 80%;
   }
-
   .rotated {
     display: none;
   }
-
   .head-quote {
     font-size: 2rem;
   }
-
   .container {
     padding-left: 4em;
     padding-right: 4em;
     padding-top: 5em;
   }
-
   .service .my-services {
     white-space: nowrap;
   }
@@ -6201,26 +6190,21 @@ section {
     padding-top: 8em;
     width: 180%;
   }
-
   .skills .skill-row img {
     width: 180%;
     margin-top: 3em;
     margin-left: -2em;
   }
-
   .service .section-subheading {
     font-size: 1.4rem;
     margin-bottom: -0.4em;
   }
-
   .service .details {
     font-size: medium;
   }
-
   .service ul li {
     font-size: 1rem;
   }
-
   .skills .skill-row {
     padding-left: 2em;
   }
@@ -6234,7 +6218,6 @@ section {
   .skills .skill-det {
     padding-left: 7.6em;
   }
-
   .contact .contact-subhead {
     font-size: 1.4rem;
   }
@@ -6248,21 +6231,17 @@ section {
   .contact .address .location {
     font-size: 0.8rem;
   }
-
   .projects .project-row img {
     border: 10px solid #ebebeb;
   }
-
   .projects .sub-p {
     font-size: 1.4rem;
   }
-
   .service, .contact, .skills, .projects {
     transform: translateY(0%);
     opacity: 1;
     transition: all 1.2s ease-in-out;
   }
-
   .nav .navbar-toggler {
     margin-right: 1.4em;
   }
@@ -6273,17 +6252,14 @@ section {
     padding-top: 4em;
     width: 100%;
   }
-
   .skills .skill-row img {
     width: 160%;
     margin-top: 1em;
     padding-left: 0em;
   }
-
   .skills .skill-det {
     padding-left: 2em;
   }
-
   .projects .detailed-project {
     padding-top: 1em !important;
     font-size: 0.8rem;
@@ -6291,24 +6267,19 @@ section {
   .projects .detailed-project .fa-arrow-right {
     font-size: 1rem;
   }
-
   .projects .detailed-project:hover .fa-arrow-right {
     font-size: 1.2rem;
   }
-
   .projects .project-row img {
     max-width: 70%;
     opacity: 80%;
   }
-
   html, body {
     overflow-x: hidden !important;
   }
-
   ::-webkit-scrollbar {
     width: 0px;
   }
-
   .nav .navbar-toggler {
     margin-right: 1.6em;
   }
@@ -6317,25 +6288,20 @@ section {
   .navbar-brand {
     font-size: 2rem;
   }
-
   .subhead {
     font-size: 0.7rem;
   }
-
   .title {
     font-size: large;
   }
-
   .head-quote {
     font-size: 1.4rem;
   }
-
   .container {
     padding-left: 2em;
     padding-right: 2em;
     padding-top: 5em;
   }
-
   .service .my-services {
     white-space: nowrap;
   }
@@ -6350,32 +6316,25 @@ section {
     padding-top: 4em;
     width: 120%;
   }
-
   .skills .skill-row img {
     width: 120%;
   }
-
   .skills .skill-det .skill-des {
     font-size: 1rem;
   }
-
   .skills .skill-row {
     padding-right: 2em;
   }
-
   textarea {
     width: 20rem;
     height: 4rem;
   }
-
   .form {
     font-size: 0.8rem;
   }
-
   .projects .project-row img {
     max-width: 90%;
   }
-
   .footer {
     font-size: 0.7rem;
   }
@@ -6384,11 +6343,9 @@ section {
   .navbar-brand {
     font-size: 1.5rem !important;
   }
-
   .head-quote {
     font-size: 1.1rem;
   }
-
   .projects .detailed-project {
     padding-top: 0.5em !important;
     padding-left: 2em !important;
@@ -6397,15 +6354,12 @@ section {
   .projects .detailed-project .fa-arrow-right {
     font-size: 0.8rem;
   }
-
   .projects .detailed-project:hover .fa-arrow-right {
     font-size: 1rem;
   }
-
   .projects .project-row img {
     max-width: 120%;
   }
-
   .projects .sub-p {
     font-size: 1.2rem;
   }
